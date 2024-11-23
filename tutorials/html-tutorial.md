@@ -1,9 +1,3 @@
----
-title: "HTML Tutorial"
-category: "HTML"
-published: true
----
-
 # HTML Tutorial: Step-by-Step Guide for Beginners
 
 Welcome to the **HTML Step-by-Step Tutorial**! This guide is designed to help you learn HTML from the basics to advanced concepts. Each section includes definitions, purposes, use cases, and examples with code snippets for easy understanding.
@@ -60,7 +54,7 @@ All websites use HTML as the foundation of their front-end design.
 
 ### 2. Headings and Paragraphs
 #### Definition:
-Headings (<h1> to <h6>) are used for titles, and paragraphs (<p>) for body text.
+Headings (`<h1> to <h6>`) are used for titles, and paragraphs (`<p>`) for body text.
 
 #### Purpose:
 Headings provide structure, while paragraphs hold the main content.
@@ -79,7 +73,7 @@ For organizing and displaying text on a webpage.
 
 ### 3. Lists
 #### Definition:
-Lists organize content into ordered (<ol>), unordered (<ul>), or descriptive lists (<dl>).
+Lists organize content into ordered (`<ol>`), unordered (`<ul>`), or descriptive lists (`<dl>`).
 
 #### Purpose:
 For displaying related items in a readable format.
@@ -152,7 +146,7 @@ To enhance user engagement with images.
 
 ### 6. Tables
 #### Definition:
-Tables organize data into rows and columns using <table>, <tr>, <td>, and <th>.
+Tables organize data into rows and columns using `<table>`, `<tr>`, `<td>`, and `<th>`.
 
 #### Purpose:
 To present tabular data in an understandable format.
@@ -343,7 +337,7 @@ It provides information such as the title, description, keywords, and author for
 #### Use Case:
 Adding a title for the page, specifying character encoding, or optimizing for search engines.
 
-#### #### Example:
+#### Example:
 ```html
 <!DOCTYPE html>
 <html lang="en">
