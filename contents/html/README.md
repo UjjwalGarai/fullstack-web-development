@@ -1,4 +1,4 @@
-[Home](README.md) | [HTML](contents/html/README.md) | [CSS](contents/css/README.md) | [JavaScript](contents/javascript/README.md)
+[Home](README.md) | [HTML](contents/html/README.md) | [CSS](.../contents/css/README.md) | [JavaScript](.../contents/javascript/README.md)
 
 # HTML Tutorial: Step-by-Step Guide for Beginners
 
