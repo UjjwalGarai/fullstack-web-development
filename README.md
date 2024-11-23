@@ -2,7 +2,7 @@
 
 [Home](README.md) | [HTML](contents/html/README.md) | [CSS](contents/css/README.md) | [JavaScript](contents/javascript/README.md)
 
-
+---
 Welcome to the web development tutorials repository! This collection of tutorials will help you learn HTML, CSS, and JavaScript from scratch.
 
 <!-- ![Your Image](assets/your-image.jpg) -->
