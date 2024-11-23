@@ -1,5 +1,5 @@
 [Home](../../README.md) | [HTML](README.md) | [CSS](../css/README.md) | [JavaScript](../javascript/README.md)
-
+---
 # HTML Tutorial: Step-by-Step Guide for Beginners
 
 Welcome to the **HTML Step-by-Step Tutorial**! This guide is designed to help you learn HTML from the basics to advanced concepts. Each section includes definitions, purposes, use cases, and examples with code snippets for easy understanding.
