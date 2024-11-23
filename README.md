@@ -5,7 +5,7 @@
 
 
 <div style="text-align: center; margin-bottom: 20px;">
-  <a href="tutorials/html-tutorial.md">HTML</a> | <a href="tutorials/css-tutorial.md">CSS</a> | <a href="tutorials/js-tutorial.md">JavaScript</a>
+  <a href="tutorials/html/README.md">HTML</a> | <a href="tutorials/css/README.md">CSS</a> | <a href="tutorials/javascript/README.md">JavaScript</a>
 </div>
 
 
@@ -18,9 +18,9 @@ Welcome to the web development tutorials repository! This collection of tutorial
 
 ## Table of Contents
 
-1. [HTML](tutorials/html-tutorial.md)
-2. [CSS](tutorials/css-tutorial.md)
-3. [JavaScript](tutorials/js-tutorial.md)
+1. [HTML](tutorials/html/README.md)
+2. [CSS](tutorials/css/README.md)
+3. [JavaScript](tutorials/javascript/README.md)
 
 ---
 

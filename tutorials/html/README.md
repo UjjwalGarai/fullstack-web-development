@@ -1,7 +1,13 @@
----
-title: "HTML Tutorial"
-category: "HTML"
-published: true
+
+<div style="text-align: center; margin-bottom: 20px;">
+  <h1> Fullstack Web Development</h1>
+</div>
+
+
+<div style="text-align: center; margin-bottom: 20px;">
+  <a href="tutorials/html/README.md">HTML</a> | <a href="tutorials/css/README.md">CSS</a> | <a href="tutorials/javascript/README.md">JavaScript</a>
+</div>
+
 ---
 
 # HTML Tutorial: Step-by-Step Guide for Beginners
@@ -60,7 +66,7 @@ All websites use HTML as the foundation of their front-end design.
 
 ### 2. Headings and Paragraphs
 #### Definition:
-Headings (<h1> to <h6>) are used for titles, and paragraphs (<p>) for body text.
+Headings (`<h1> to <h6>`) are used for titles, and paragraphs (`<p>`) for body text.
 
 #### Purpose:
 Headings provide structure, while paragraphs hold the main content.
@@ -79,7 +85,7 @@ For organizing and displaying text on a webpage.
 
 ### 3. Lists
 #### Definition:
-Lists organize content into ordered (<ol>), unordered (<ul>), or descriptive lists (<dl>).
+Lists organize content into ordered (`<ol>`), unordered (`<ul>`), or descriptive lists (`<dl>`).
 
 #### Purpose:
 For displaying related items in a readable format.
@@ -152,7 +158,7 @@ To enhance user engagement with images.
 
 ### 6. Tables
 #### Definition:
-Tables organize data into rows and columns using <table>, <tr>, <td>, and <th>.
+Tables organize data into rows and columns using `<table>`, `<tr>`, `<td>`, and `<th>`.
 
 #### Purpose:
 To present tabular data in an understandable format.
@@ -343,7 +349,7 @@ It provides information such as the title, description, keywords, and author for
 #### Use Case:
 Adding a title for the page, specifying character encoding, or optimizing for search engines.
 
-#### #### Example:
+#### Example:
 ```html
 <!DOCTYPE html>
 <html lang="en">
