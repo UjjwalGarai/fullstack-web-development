@@ -1,18 +1,5 @@
-<<<<<<< HEAD:tutorials/html/README.md
+[Home](README.md) | [HTML](contents/html/README.md) | [CSS](contents/css/README.md) | [JavaScript](contents/javascript/README.md)
 
-<div style="text-align: center; margin-bottom: 20px;">
-  <h1> Fullstack Web Development</h1>
-</div>
-
-
-<div style="text-align: center; margin-bottom: 20px;">
-  <a href="tutorials/html/README.md">HTML</a> | <a href="tutorials/css/README.md">CSS</a> | <a href="tutorials/javascript/README.md">JavaScript</a>
-</div>
-
----
-
-=======
->>>>>>> e59d3f1745d72e80ced856032842ba079974a1a4:tutorials/html-tutorial.md
 # HTML Tutorial: Step-by-Step Guide for Beginners
 
 Welcome to the **HTML Step-by-Step Tutorial**! This guide is designed to help you learn HTML from the basics to advanced concepts. Each section includes definitions, purposes, use cases, and examples with code snippets for easy understanding.
@@ -42,16 +29,13 @@ Welcome to the **HTML Step-by-Step Tutorial**! This guide is designed to help yo
 
 ### 1. Introduction to HTML
 
-#### Definition:
-HTML (HyperText Markup Language) is the standard language for creating web pages.
+- **Definition:**  HTML (HyperText Markup Language) is the standard language for creating web pages.
 
-#### Purpose:
-It structures content on the web, organizing text, images, links, and multimedia elements into meaningful layouts.
+- **Purpose:**  It structures content on the web, organizing text, images, links, and multimedia elements into meaningful layouts.
 
-#### Use Case:
-All websites use HTML as the foundation of their front-end design.
+- **Use Case:** All websites use HTML as the foundation of their front-end design.
 
-#### Example:
+- **Example:** 
 ```html
 <!DOCTYPE html>
 <html>
@@ -68,16 +52,13 @@ All websites use HTML as the foundation of their front-end design.
 ---
 
 ### 2. Headings and Paragraphs
-#### Definition:
-Headings (`<h1> to <h6>`) are used for titles, and paragraphs (`<p>`) for body text.
+- **Definition:** Headings (`<h1> to <h6>`) are used for titles, and paragraphs (`<p>`) for body text.
 
-#### Purpose:
-Headings provide structure, while paragraphs hold the main content.
+- **Purpose:** Headings provide structure, while paragraphs hold the main content.
 
-#### Use Case:
-For organizing and displaying text on a webpage.
+- **Use Case:** For organizing and displaying text on a webpage.
 
-#### Example:
+- **Example:** 
 ```html
 <h1>Main Heading</h1>
 <h2>Subheading</h2>
@@ -87,16 +68,13 @@ For organizing and displaying text on a webpage.
 ---
 
 ### 3. Lists
-#### Definition:
-Lists organize content into ordered (`<ol>`), unordered (`<ul>`), or descriptive lists (`<dl>`).
+- **Definition:** Lists organize content into ordered (`<ol>`), unordered (`<ul>`), or descriptive lists (`<dl>`).
 
-#### Purpose:
-For displaying related items in a readable format.
+- **Purpose:** For displaying related items in a readable format.
 
-#### Use Case:
-Creating menus, steps, or enumerations.
+- **Use Case:** Creating menus, steps, or enumerations.
 
-#### Example:
+- **Example:** 
 ```html
 <!-- Ordered List -->
 <ol>
@@ -120,16 +98,10 @@ Creating menus, steps, or enumerations.
 ---
 
 ### 4. Links and Navigation
-#### Definition:
-Links (<a>) connect web pages, while navigation menus group links.
-
-#### Purpose:
-To navigate between different pages or external resources.
-
-#### Use Case:
-For creating menus or linking to other websites.
-
-#### Example:
+- **Definition:** Links (<a>) connect web pages, while navigation menus group links.
+- **Purpose:** To navigate between different pages or external resources.
+- **Use Case:** For creating menus or linking to other websites.
+- **Example:** 
 ```html
 <a href="https://example.com">Visit Example</a>
 <nav>
@@ -143,16 +115,10 @@ For creating menus or linking to other websites.
 ---
 
 ### 5. Images
-#### Definition:
-Images are added using the <img> tag.
-
-#### Purpose:
-To display visual content.
-
-#### Use Case:
-To enhance user engagement with images.
-
-#### Example:
+- **Definition:** Images are added using the <img> tag.
+- **Purpose:** To display visual content.
+- **Use Case:** To enhance user engagement with images.
+- **Example:** 
 ```html
 <img src="image.jpg" alt="Descriptive Text" width="300" height="200">
 ```
@@ -160,16 +126,10 @@ To enhance user engagement with images.
 ---
 
 ### 6. Tables
-#### Definition:
-Tables organize data into rows and columns using `<table>`, `<tr>`, `<td>`, and `<th>`.
-
-#### Purpose:
-To present tabular data in an understandable format.
-
-#### Use Case:
-For displaying schedules, data, or comparison charts.
-
-#### Example:
+- **Definition:** Tables organize data into rows and columns using `<table>`, `<tr>`, `<td>`, and `<th>`.
+- **Purpose:** To present tabular data in an understandable format.
+- **Use Case:** For displaying schedules, data, or comparison charts.
+- **Example:** 
 ```html
 <table border="1">
   <tr>
@@ -186,16 +146,10 @@ For displaying schedules, data, or comparison charts.
 ---
 
 ### 7. Forms
-#### Definition:
-Forms allow user input with <form> and various input elements.
-
-#### Purpose:
-To collect and process user data.
-
-#### Use Case:
-Login forms, sign-ups, feedback, and search functionality.
-
-#### Example:
+- **Definition:** Forms allow user input with <form> and various input elements.
+- **Purpose:** To collect and process user data.
+- **Use Case:** Login forms, sign-ups, feedback, and search functionality.
+- **Example:** 
 ```html
 <form action="/submit" method="post">
   <label for="name">Name:</label>
@@ -207,16 +161,10 @@ Login forms, sign-ups, feedback, and search functionality.
 ---
 
 ### 8. Semantic HTML
-#### Definition:
-Semantic tags provide meaning and structure to the content.
-
-#### Purpose:
-Improves accessibility and SEO.
-
-#### Use Case:
-For better-organized web pages.
-
-#### Example:
+- **Definition:** Semantic tags provide meaning and structure to the content.
+- **Purpose:** Improves accessibility and SEO.
+- **Use Case:** For better-organized web pages.
+- **Example:** 
 ```html
 <header>
   <h1>Website Title</h1>
@@ -233,16 +181,10 @@ For better-organized web pages.
 ---
 
 ### 9. Media
-#### Definition:
-Media tags (<video>, <audio>) embed multimedia content.
-
-#### Purpose:
-To play video or audio directly on a webpage.
-
-#### Use Case:
-Adding tutorials, podcasts, or entertainment content.
-
-#### Example:
+- **Definition:** Media tags (<video>, <audio>) embed multimedia content.
+- **Purpose:** To play video or audio directly on a webpage.
+- **Use Case:** Adding tutorials, podcasts, or entertainment content.
+- **Example:** 
 ```html
 <video controls>
   <source src="video.mp4" type="video/mp4">
@@ -256,16 +198,10 @@ Adding tutorials, podcasts, or entertainment content.
 ---
 
 ### 10. Attributes
-#### Definition:
-Attributes provide additional information about HTML elements.
-
-#### Purpose:
-Enhance functionality or styling.
-
-#### Use Case:
-Setting IDs, classes, or styles.
-
-#### Example:
+- **Definition:** Attributes provide additional information about HTML elements.
+- **Purpose:** Enhance functionality or styling.
+- **Use Case:** Setting IDs, classes, or styles.
+- **Example:** 
 ```html
 <p id="intro" class="highlight" style="color: red;">Hello World!</p>
 ```
@@ -273,16 +209,10 @@ Setting IDs, classes, or styles.
 ---
 
 ### 11. HTML Entities
-#### Definition:
-Special characters represented by codes (e.g., &lt;, &amp;).
-
-#### Purpose:
-To display reserved or special characters.
-
-#### Use Case:
-Writing symbols or reserved characters.
-
-#### Example:
+- **Definition:** Special characters represented by codes (e.g., &lt;, &amp;).
+- **Purpose:** To display reserved or special characters.
+- **Use Case:** Writing symbols or reserved characters.
+- **Example:** 
 ```html
 <p>5 &lt; 10 &amp; 10 &gt; 1</p>
 ```
@@ -290,16 +220,10 @@ Writing symbols or reserved characters.
 ---
 
 ### 12. Forms and Validation
-#### Definition:
-Validation attributes ensure proper input from users.
-
-#### Purpose:
-To improve user input accuracy.
-
-#### Use Case:
-Creating required or pattern-matching fields.
-
-#### Example:
+- **Definition:** Validation attributes ensure proper input from users.
+- **Purpose:** To improve user input accuracy.
+- **Use Case:** Creating required or pattern-matching fields.
+- **Example:** 
 ```html
 <form>
   <input type="text" required pattern="[A-Za-z]{3,}">
@@ -309,16 +233,10 @@ Creating required or pattern-matching fields.
 ---
 
 ### 13. Iframe
-#### Definition:
-The `<iframe>` tag embeds external content.
-
-#### Purpose:
-To integrate content like maps or other sites.
-
-#### Use Case:
-Embedding YouTube videos, Google Maps, or other content.
-
-#### Example:
+- **Definition:** The `<iframe>` tag embeds external content.
+- **Purpose:** To integrate content like maps or other sites.
+- **Use Case:** Embedding YouTube videos, Google Maps, or other content.
+- **Example:** 
 ```html
 <iframe src="https://example.com" width="600" height="400"></iframe>
 ```
@@ -326,16 +244,10 @@ Embedding YouTube videos, Google Maps, or other content.
 ---
 
 ### 14. HTML5 Features
-#### Definition:
-HTML5 introduces new tags and APIs.
-
-#### Purpose:
-Enhance functionality and interactivity.
-
-#### Use Case:
-Using <canvas> for graphics, <progress> for progress bars, and more.
-
-#### Example:
+- **Definition:** HTML5 introduces new tags and APIs.
+- **Purpose:** Enhance functionality and interactivity.
+- **Use Case:** Using <canvas> for graphics, <progress> for progress bars, and more.
+- **Example:** 
 ```html
 <progress value="70" max="100"></progress>
 ```
@@ -343,16 +255,10 @@ Using <canvas> for graphics, <progress> for progress bars, and more.
 
 ### 15. HTML Document Metadata
 
-#### Definition:
-HTML metadata is information about a webpage that isn’t displayed directly on the page, defined in the `<head>` section.
-
-#### Purpose:
-It provides information such as the title, description, keywords, and author for SEO, accessibility, and proper browser rendering.
-
-#### Use Case:
-Adding a title for the page, specifying character encoding, or optimizing for search engines.
-
-#### Example:
+- **Definition:** HTML metadata is information about a webpage that isn’t displayed directly on the page, defined in the `<head>` section.
+- **Purpose:** It provides information such as the title, description, keywords, and author for SEO, accessibility, and proper browser rendering.
+- **Use Case:** Adding a title for the page, specifying character encoding, or optimizing for search engines.
+- **Example:** 
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -372,16 +278,10 @@ Adding a title for the page, specifying character encoding, or optimizing for se
 ---
 
 ### 16. Introduction to CSS Integration
-#### Definition:
-CSS (Cascading Style Sheets) is used to style and layout web pages.
-
-#### Purpose:
-Separating content (HTML) and design (CSS) to create visually appealing and consistent web pages.
-
-#### Use Case:
-Adding custom styles to headings, paragraphs, links, and more.
-
-#### Example:
+- **Definition:** CSS (Cascading Style Sheets) is used to style and layout web pages.
+- **Purpose:** Separating content (HTML) and design (CSS) to create visually appealing and consistent web pages.
+- **Use Case:** Adding custom styles to headings, paragraphs, links, and more.
+- **Example:** 
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -406,16 +306,10 @@ Adding custom styles to headings, paragraphs, links, and more.
 ---
 
 ### 17. Introduction to JavaScript Integration
-#### Definition:
-JavaScript is a scripting language that adds interactivity to web pages.
-
-#### Purpose:
-To create dynamic and interactive features like animations, form validation, and event handling.
-
-#### Use Case:
-Integrating JavaScript to create responsive buttons or process user inputs.
-
-#### Example:
+- **Definition:** JavaScript is a scripting language that adds interactivity to web pages.
+- **Purpose:** To create dynamic and interactive features like animations, form validation, and event handling.
+- **Use Case:** Integrating JavaScript to create responsive buttons or process user inputs.
+- **Example:** 
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -432,14 +326,9 @@ Integrating JavaScript to create responsive buttons or process user inputs.
 ---
 
 ### 18. Best Practices
-#### Definition:
-HTML best practices are guidelines to ensure code quality, readability, and maintainability.
-
-#### Purpose:
-To create clean, accessible, and efficient HTML code.
-
-#### Use Case:
-Following standards for better browser compatibility, SEO, and team collaboration.
+- **Definition:** HTML best practices are guidelines to ensure code quality, readability, and maintainability.
+- **Purpose:** To create clean, accessible, and efficient HTML code.
+- **Use Case:** Following standards for better browser compatibility, SEO, and team collaboration.
 
 #### Best Practices: 
 * Use Semantic HTML: Use tags like `<header>`, `<article>`, and `<footer>` for better structure.
@@ -447,7 +336,7 @@ Following standards for better browser compatibility, SEO, and team collaboratio
 * Avoid Inline Styles: Use external CSS for styling.
 * Validate Code: Use tools like the [W3C HTML Validator](https://validator.w3.org/detailed.html).
 * Responsive Design: Use the `<meta name="viewport">` tag for mobile compatibility.
-#### Example:
+- **Example:** 
 ```html
 <!DOCTYPE html>
 <html lang="en">

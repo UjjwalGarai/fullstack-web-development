@@ -1,12 +1,4 @@
-
-<div style="text-align: center; margin-bottom: 20px;">
-  <h1> Fullstack Web Development</h1>
-</div>
-
-<div style="text-align: center; margin-bottom: 20px;">
-  <a href="tutorials/html/README.md">HTML</a> | <a href="tutorials/css/README.md">CSS</a> | <a href="tutorials/javascript/README.md">JavaScript</a>
-</div>
-
+[Home](README.md) | [HTML](contents/html/README.md) | [CSS](contents/css/README.md) | [JavaScript](contents/javascript/README.md)
 ---
 
 # Comprehensive JavaScript Tutorial
@@ -45,15 +37,11 @@ Welcome to the **Comprehensive JavaScript Tutorial**! This step-by-step guide is
 ---
 
 ### 1. Including JavaScript in HTML
-#### Definition: 
-JavaScript can be included in HTML using `<script>` tags.  
-#### Purpose: 
-Connect JavaScript to your webpage for interactivity.  
-#### Use Case: 
-Add dynamic behavior, form validation, animations, etc.  
+- **Definition:**  JavaScript can be included in HTML using `<script>` tags.  
+- **Purpose:**  Connect JavaScript to your webpage for interactivity.  
+- **Use Case:**  Add dynamic behavior, form validation, animations, etc.  
 
-#### Example:
-```html
+- **Example:**```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,16 +59,11 @@ Add dynamic behavior, form validation, animations, etc.
 ---
 
 ### 2. Alert and Prompt
-#### Definition: 
-alert(): Displays a message box.
-prompt(): Asks the user for input.
-#### Purpose: 
-Interact with users using dialogs.
-#### Use Case: 
-Provide notifications or get simple user input.
+- **Definition:**  *alert():* Displays a message box. *prompt():* Asks the user for input.
+- **Purpose:**  Interact with users using dialogs.
+- **Use Case:**  Provide notifications or get simple user input.
 
-#### Example:
-
+- **Example:**
 ```javascript
 alert("Welcome to the site!");
 let name = prompt("What is your name?");
@@ -90,15 +73,11 @@ console.log("Hello, " + name);
 ---
 
 ### 3. Variables
-#### Definition: 
-Variables are named containers for data, declared using var, let, or const.
-#### Purpose: 
-Store and manage data in a program.
-#### 
-Use Case: Hold dynamic data like user inputs or calculations.
+- **Definition:**  Variables are named containers for data, declared using var, let, or const.
+- **Purpose:**  Store and manage data in a program.
+- **Use Case:**  Hold dynamic data like user inputs or calculations.
 
-#### Example:
-
+- **Example:**
 ```javascript
 let age = 25;
 const name = "Ujjwal";
@@ -108,15 +87,11 @@ console.log(name + " is " + age + " years old.");
 ---
 
 ### 4. Data Types
-#### Definition: 
-JavaScript supports types like strings, numbers, booleans, objects, and arrays.
-#### Purpose: 
-Define the kind of data a variable holds.
-#### Use Case: 
-Identify what operations are valid for the data.
+- **Definition:**  JavaScript supports types like strings, numbers, booleans, objects, and arrays.
+- **Purpose:**  Define the kind of data a variable holds.
+- **Use Case:**  Identify what operations are valid for the data.
 
-#### Example:
-
+- **Example:**
 ```javascript
 let text = "Hello"; // string
 let number = 42;    // number
@@ -127,15 +102,11 @@ console.log(typeof text); // "string"
 ---
 
 ### 5. Variable Naming Conventions
-#### Definition: 
-Use camelCase for variables and avoid reserved keywords.
-#### Purpose: 
-Create readable and consistent variable names.
-#### Use Case: 
-Improve code readability and maintainability.
+- **Definition:**  Use camelCase for variables and avoid reserved keywords.
+- **Purpose:**  Create readable and consistent variable names.
+- **Use Case:**  Improve code readability and maintainability.
 
-#### Example:
-
+- **Example:**
 ```javascript
 let userAge = 25; // camelCase
 let isLoggedIn = true;
@@ -144,15 +115,11 @@ let isLoggedIn = true;
 ---
 
 ### 6. String Manipulation
-#### Definition: 
-Strings are sequences of characters, and JavaScript provides methods for manipulation.
-#### Purpose: 
-Perform operations on text data.
-#### Use Case: 
-Format user inputs or messages.
+- **Definition:**  Strings are sequences of characters, and JavaScript provides methods for manipulation.
+- **Purpose:**  Perform operations on text data.
+- **Use Case:**  Format user inputs or messages.
 
-#### Example:
-
+- **Example:**
 ```javascript
 let greeting = "Hello, ";
 let name = "Ujjwal";
@@ -163,15 +130,11 @@ console.log(name.length); // 6
 ---
 
 ### 7. Operators
-#### Definition: 
-Includes arithmetic (+, -), logical (&&, ||), and assignment (=) operators.
-#### Purpose: 
-Perform calculations or comparisons.
-#### Use Case: 
-Perform math, compare values, or assign data.
+- **Definition:**  Includes arithmetic (+, -), logical (&&, ||), and assignment (=) operators.
+- **Purpose:**  Perform calculations or comparisons.
+- **Use Case:**  Perform math, compare values, or assign data.
 
-#### Example:
-
+- **Example:**
 ```javascript
 let result = (5 + 3) * 2;
 console.log(result); // 16
@@ -180,15 +143,11 @@ console.log(result); // 16
 ---
 
 ### 8. Functions
-#### Definition: 
-Functions are reusable code snippets that can accept inputs and return outputs.
-#### Purpose: 
-Reuse blocks of code.
-#### Use Case: 
-Organize code and perform repetitive tasks.
+- **Definition:**  Functions are reusable code snippets that can accept inputs and return outputs.
+- **Purpose:**  Reuse blocks of code.
+- **Use Case:**  Organize code and perform repetitive tasks.
 
-#### Example:
-
+- **Example:**
 ```javascript
 function greet(name) {
     return "Hello, " + name;
@@ -199,15 +158,11 @@ console.log(greet("Ujjwal")); // "Hello, Ujjwal"
 ---
 
 ### 9. Random Number Generation
-#### Definition: 
-The Math.random() function returns a random number between 0 and 1.
-#### Purpose: 
-Generate unpredictable values.
-#### Use Case: 
-Games, simulations, or selecting random elements.
+- **Definition:**  The Math.random() function returns a random number between 0 and 1.
+- **Purpose:**  Generate unpredictable values.
+- **Use Case:**  Games, simulations, or selecting random elements.
 
-#### Example:
-
+- **Example:**
 ```javascript
 let randomNumber = Math.random() * 10; // Between 0 and 10
 console.log(randomNumber);
@@ -216,15 +171,11 @@ console.log(randomNumber);
 ---
 
 ### 10. Control Statements
-#### Definition: 
-if-else statements execute code based on conditions.
-#### Purpose: 
-Direct the flow of execution.
-#### Use Case: 
-Execute specific logic based on user input or system state.
+- **Definition:**  if-else statements execute code based on conditions.
+- **Purpose:**  Direct the flow of execution.
+- **Use Case:**  Execute specific logic based on user input or system state.
 
-#### Example:
-
+- **Example:**
 ```javascript
 let age = 20;
 if (age >= 18) {
@@ -237,15 +188,11 @@ if (age >= 18) {
 ---
 
 ### 11. Comparators and Equality
-#### Definition: 
-JavaScript provides operators like ==, ===, !=, !==, <, >, <=, >= to compare values.
-#### Purpose: 
-Compare two values.
-#### Use Case: 
-Validate conditions or create decision-making logic.
+- **Definition:**  JavaScript provides operators like ==, ===, !=, !==, <, >, <=, >= to compare values.
+- **Purpose:**  Compare two values.
+- **Use Case:**  Validate conditions or create decision-making logic.
 
-#### Example:
-
+- **Example:**
 ```javascript
 let a = 5;
 let b = "5";
@@ -257,15 +204,11 @@ console.log(a > 3);   // true
 ---
 
 ### 12. Combining Operators
-#### Definition: 
-Use logical operators like && (AND), || (OR), and ! (NOT) to create compound conditions.
-#### Purpose: 
-Combine multiple conditions in a single statement.
-#### Use Case: 
-Create complex decision-making rules.
+- **Definition:**  Use logical operators like && (AND), || (OR), and ! (NOT) to create compound conditions.
+- **Purpose:**  Combine multiple conditions in a single statement.
+- **Use Case:**  Create complex decision-making rules.
 
-#### Example:
-
+- **Example:**
 ```javascript
 let age = 25;
 let isMember = true;
@@ -277,15 +220,11 @@ if (age > 18 && isMember) {
 ---
 
 ### 13. Arrays
-#### Definition: 
-Arrays are ordered collections of data.
-#### Purpose: 
-Store and manipulate lists of values.
-#### Use Case: 
-Store multiple values like a list of names or numbers.
+- **Definition:**  Arrays are ordered collections of data.
+- **Purpose:**  Store and manipulate lists of values.
+- **Use Case:**  Store multiple values like a list of names or numbers.
 
-#### Example:
-
+- **Example:**
 ```javascript
 let colors = ["red", "blue", "green"];
 console.log(colors[0]); // "red"
@@ -297,12 +236,9 @@ console.log(colors.length); // 3
 ---
 
 ### 14. Loops
-#### Definition: 
-JavaScript supports for, while, and do-while loops for iteration.
-#### Purpose: 
-Repeat a block of code.
-#### Use Case: 
-Iterate through arrays or repeat actions.
+- **Definition:**  JavaScript supports for, while, and do-while loops for iteration.
+- **Purpose:**  Repeat a block of code.
+- **Use Case:**  Iterate through arrays or repeat actions.
 
 #### Example (For Loop):
 
@@ -325,15 +261,11 @@ while (count < 5) {
 ---
 
 ### 15. Type Checking with typeof
-#### Definition: 
-The typeof operator returns the type of a variable or expression.
-#### Purpose: 
-Identify the type of a value.
-#### Use Case: 
-Debug code or ensure proper data types.
+- **Definition:**  The typeof operator returns the type of a variable or expression.
+- **Purpose:**  Identify the type of a value.
+- **Use Case:**  Debug code or ensure proper data types.
 
-#### Example:
-
+- **Example:**
 ```javascript
 let name = "Ujjwal";
 console.log(typeof name); // "string"
@@ -344,15 +276,11 @@ console.log(typeof age);  // "number"
 ---
 
 ### 16. ForEach Loop
-#### Definition: 
-The forEach method executes a provided function for each array element.
-#### Purpose: 
-Iterate through array elements.
-#### Use Case: 
-Simplify iteration tasks.
+- **Definition:**  The forEach method executes a provided function for each array element.
+- **Purpose:**  Iterate through array elements.
+- **Use Case:**  Simplify iteration tasks.
 
-#### Example:
-
+- **Example:**
 ```javascript
 let fruits = ["apple", "banana", "cherry"];
 fruits.forEach(fruit => {
@@ -363,15 +291,11 @@ fruits.forEach(fruit => {
 ---
 
 ### 17. Objects
-#### Definition: 
-Objects are collections of key-value pairs.
-#### Purpose: 
-Group related data and functions.
-#### Use Case: 
-Represent entities like users or products.
+- **Definition:**  Objects are collections of key-value pairs.
+- **Purpose:**  Group related data and functions.
+- **Use Case:**  Represent entities like users or products.
 
-#### Example:
-
+- **Example:**
 ```javascript
 let user = {
     name: "Ujjwal",
@@ -387,15 +311,11 @@ user.greet();           // "Hello Ujjwal"
 ---
 
 ### 18. Object Constructor Functions
-#### Definition: 
-Functions that act as templates for creating objects.
-#### Purpose: 
-Create multiple similar objects.
-#### Use Case: 
-Manage large-scale applications with reusable structures.
+- **Definition:**  Functions that act as templates for creating objects.
+- **Purpose:**  Create multiple similar objects.
+- **Use Case:**  Manage large-scale applications with reusable structures.
 
-#### Example:
-
+- **Example:**
 ```javascript
 function User(name, age) {
     this.name = name;
@@ -409,15 +329,11 @@ console.log(user1.name); // "Alice"
 ---
 
 ### 19. Higher-Order Functions
-#### Definition: 
-Functions that operate on other functions.
-#### Purpose: 
-Work with functions as arguments or return values.
-#### Use Case: 
-Functional programming tasks like filtering, mapping, and reducing.
+- **Definition:**  Functions that operate on other functions.
+- **Purpose:**  Work with functions as arguments or return values.
+- **Use Case:**  Functional programming tasks like filtering, mapping, and reducing.
 
-#### Example:
-
+- **Example:**
 ```javascript
 let numbers = [1, 2, 3, 4];
 let doubled = numbers.map(num => num * 2);
@@ -427,15 +343,11 @@ console.log(doubled); // [2, 4, 6, 8]
 ---
 
 ### 20. Classes
-#### Definition: 
-Classes define object properties and behaviors using constructor and methods.
-#### Purpose: 
-Create blueprints for objects.
-#### Use Case: 
-Organize code in object-oriented projects.
+- **Definition:**  Classes define object properties and behaviors using constructor and methods.
+- **Purpose:**  Create blueprints for objects.
+- **Use Case:**  Organize code in object-oriented projects.
 
-#### Example:
-
+- **Example:**
 ```javascript
 class Car {
     constructor(brand, model) {
@@ -453,15 +365,11 @@ car.start(); // "Toyota Corolla is starting."
 ---
 
 ### 21. Dates
-#### Definition: 
-The Date object provides methods for working with dates.
-#### Purpose: 
-Handle date and time data.
-#### Use Case: 
-Timestamps, scheduling, and formatting dates.
+- **Definition:**  The Date object provides methods for working with dates.
+- **Purpose:**  Handle date and time data.
+- **Use Case:**  Timestamps, scheduling, and formatting dates.
 
-#### Example:
-
+- **Example:**
 ```javascript
 let now = new Date();
 console.log(now.toDateString()); // e.g., "Tue Nov 21 2024"
@@ -470,15 +378,11 @@ console.log(now.toDateString()); // e.g., "Tue Nov 21 2024"
 ---
 
 ### 22. Switch Statements
-#### Definition: 
-Executes code based on matching cases.
-#### Purpose: 
-Simplify conditional logic for multiple values.
-#### Use Case: 
-Handle fixed sets of conditions like user roles.
+- **Definition:**  Executes code based on matching cases.
+- **Purpose:**  Simplify conditional logic for multiple values.
+- **Use Case:**  Handle fixed sets of conditions like user roles.
 
-#### Example:
-
+- **Example:**
 ```javascript
 
 let day = "Monday";
@@ -497,15 +401,11 @@ switch (day) {
 ---
 
 ### 23. Getters and Setters
-#### Definition: 
-Methods for retrieving and updating object properties.
-#### Purpose: 
-Encapsulate property access and modification.
-#### Use Case: 
-Control or validate property changes.
+- **Definition:**  Methods for retrieving and updating object properties.
+- **Purpose:**  Encapsulate property access and modification.
+- **Use Case:**  Control or validate property changes.
 
-#### Example:
-
+- **Example:**
 ```javascript
 class Person {
     constructor(name) {
@@ -529,16 +429,11 @@ console.log(person.name); // "Amit"
 ---
 
 ### 24. Break and Continue Statements
-#### Definition:
-break: Exits the loop.
-continue: Skips the current iteration.
-#### Purpose: 
-Modify loop behavior.
-#### Use Case: 
-Skip invalid data or exit loops based on conditions.
-#### Example:
+- **Definition:** *break:* Exits the loop.*continue:* Skips the current iteration.
+- **Purpose:**  Modify loop behavior.
+- **Use Case:**  Skip invalid data or exit loops based on conditions.
+- **Example:**
 ```javascript
-
 for (let i = 0; i < 5; i++) {
     if (i === 3) continue;
     console.log(i); // 0, 1, 2, 4
