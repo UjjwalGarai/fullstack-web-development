@@ -1,3 +1,4 @@
+<<<<<<< HEAD:tutorials/html/README.md
 
 <div style="text-align: center; margin-bottom: 20px;">
   <h1> Fullstack Web Development</h1>
@@ -10,6 +11,8 @@
 
 ---
 
+=======
+>>>>>>> e59d3f1745d72e80ced856032842ba079974a1a4:tutorials/html-tutorial.md
 # HTML Tutorial: Step-by-Step Guide for Beginners
 
 Welcome to the **HTML Step-by-Step Tutorial**! This guide is designed to help you learn HTML from the basics to advanced concepts. Each section includes definitions, purposes, use cases, and examples with code snippets for easy understanding.
