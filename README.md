@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Fullstack Web Development
 
 [Home](README.md) | [HTML](contents/html/README.md) | [CSS](contents/css/README.md) | [JavaScript](contents/javascript/README.md)

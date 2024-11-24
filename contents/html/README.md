@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 [Home](../../README.md) | [HTML](README.md) | [CSS](../css/README.md) | [JavaScript](../javascript/README.md)
 ---
 # HTML Tutorial: Step-by-Step Guide for Beginners

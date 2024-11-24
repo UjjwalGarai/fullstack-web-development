@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 [Home](../../README.md) | [HTML](../html/README.md) | [CSS](../css/README.md) | [JavaScript](README.md)
 ---
 
