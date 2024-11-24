@@ -44,8 +44,8 @@ Welcome to the **Comprehensive JavaScript Tutorial**! This step-by-step guide is
 - **Definition:**  JavaScript can be included in HTML using `<script>` tags.  
 - **Purpose:**  Connect JavaScript to your webpage for interactivity.  
 - **Use Case:**  Add dynamic behavior, form validation, animations, etc.  
-
-- **Example:**```html
+- **Example:**
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
