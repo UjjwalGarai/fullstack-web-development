@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- Prism.js Stylesheet for syntax highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <!-- toogle icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="center-items">
+            <a href="../index.html">Home</a>
+            <a href="./html.html">HTML</a>
+            <a href="./css.html">CSS</a>
+            <a href="./js.html">JavaScript</a>
+            <a href="./dom.html">DOM</a>
+            <a href="./jquery.html">JQuery</a>
+            <a href="./text.html">Text</a>
+        </div>
+        <div>
+            <i id="toggle-color-icon" class="fas fa-moon"></i> <!-- Icon for toggle -->
+        </div>
+    </div>
+
+    <!-- Body Contents -->
+    <div class="body-content">
+        <!-- table of contents -->
+        <div class="table-of-contents">
+            <ol>
+                <li id="table-of-contents">Table of Contents</li>
+                <li><a href="#1-including-javascript-in-html">Including JavaScript in HTML</a> </li>
+                <li><a href="#2-alert-and-prompt">Alert and Prompt</a> </li>
+                <li><a href="#3-variables">Variables</a> </li>
+                <li><a href="#4-data-types">Data Types</a> </li>
+                <li><a href="#5-variable-naming-conventions">Variable Naming Conventions</a> </li>
+                <li><a href="#6-string-manipulation">String Manipulation</a> </li>
+                <li><a href="#7-operators">Operators</a> </li>
+                <li><a href="#8-functions">Functions</a> </li>
+                <li><a href="#9-random-number-generation">Random Number Generation</a> </li>
+                <li><a href="#10-control-statements">Control Statements</a> </li>
+                <li><a href="#11-comparators-and-equality">Comparators and Equality</a> </li>
+                <li><a href="#12-combining-operators">Combining Operators</a> </li>
+                <li><a href="#13-arrays">Arrays</a> </li>
+                <li><a href="#14-loops">Loops</a> </li>
+                <li><a href="#15-type-checking-with-typeof">Type Checking with <code>typeof</code></a> </li>
+                <li><a href="#16-foreach-loop">ForEach Loop</a> </li>
+                <li><a href="#17-objects">Objects</a> </li>
+                <li><a href="#18-object-constructor-functions">Object Constructor Functions</a> </li>
+                <li><a href="#19-higher-order-functions">Higher-Order Functions</a> </li>
+                <li><a href="#20-classes">Classes</a> </li>
+                <li><a href="#21-dates">Dates</a> </li>
+                <li><a href="#22-switch-statements">Switch Statements</a> </li>
+                <li><a href="#23-getters-and-setters">Getters and Setters</a> </li>
+                <li><a href="#24-break-and-continue-statements">Break and Continue Statements</a> </li>
+            </ol>
+        </div>
+        <!-- Step by step guide -->
+        <div class="step-by-step-guide">
+            <h1 id="comprehensive-javascript-tutorial">Comprehensive JavaScript Tutorial</h1>
+            <p>Welcome to the <strong>Comprehensive JavaScript Tutorial</strong>! This step-by-step guide is crafted for
+                beginners and intermediate learners to understand JavaScript fundamentals and advanced concepts. Each
+                topic includes the <strong>Purpose</strong>, <strong>Definition</strong>, <strong>Use Case</strong>, and
+                <strong>Example</strong> to ensure you grasp the why, what, and how of each concept.
+            </p>
+            <hr>
+
+            <h3 id="1-including-javascript-in-html">1. Including JavaScript in HTML</h3>
+            <ul>
+                <li><strong>Definition:</strong> JavaScript can be included in HTML using <code>&lt;script&gt;</code>
+                    tags. </li>
+                <li><strong>Purpose:</strong> Connect JavaScript to your webpage for interactivity. </li>
+                <li><strong>Use Case:</strong> Add dynamic behavior, form validation, animations, etc. </li>
+                <li>
+                    <p><strong>Example:</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>My JavaScript Page<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Welcome!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"JavaScript is working!"</span>);
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+
+            <h3 id="2-alert-and-prompt">2. Alert and Prompt</h3>
+            <ul>
+                <li><strong>Definition:</strong> <em>alert():</em> Displays a message box. <em>prompt():</em> Asks the
+                    user
+                    for input.</li>
+                <li><strong>Purpose:</strong> Interact with users using dialogs.</li>
+                <li>
+                    <p><strong>Use Case:</strong> Provide notifications or get simple user input.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong> </p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript">alert(<span class="hljs-string">"Welcome to the site!"</span>);
+let <span class="hljs-built_in">name</span> = prompt(<span class="hljs-string">"What is your name?"</span>);
+console.<span class="hljs-built_in">log</span>(<span class="hljs-string">"Hello, "</span> + <span class="hljs-built_in">name</span>);
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+
+            <h3 id="3-variables">3. Variables</h3>
+            <ul>
+                <li><strong>Definition:</strong> Variables are named containers for data, declared using var, let, or
+                    const.</li>
+                <li><strong>Purpose:</strong> Store and manage data in a program.</li>
+                <li>
+                    <p><strong>Use Case:</strong> Hold dynamic data like user inputs or calculations.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong> </p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript">let age = <span class="hljs-number">25</span>;
+const <span class="hljs-built_in">name</span> = <span class="hljs-string">"Ujjwal"</span>;
+console.<span class="hljs-built_in">log</span>(<span class="hljs-built_in">name</span> + <span class="hljs-string">" is "</span> + age + <span class="hljs-string">" years old."</span>);
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="4-data-types">4. Data Types</h3>
+            <ul>
+                <li><strong>Definition:</strong> JavaScript supports types like strings, numbers, booleans, objects, and
+                    arrays.
+                </li>
+                <li><strong>Purpose:</strong> Define the kind of data a variable holds.</li>
+                <li>
+                    <p><strong>Use Case:</strong> Identify what operations are valid for the data.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong> </p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript"><span class="hljs-built_in">let</span> <span class="hljs-built_in">text</span> = <span class="hljs-string">"Hello"</span>; <span class="hljs-comment">// string</span>
+<span class="hljs-built_in">let</span> number = <span class="hljs-number">42</span>;    <span class="hljs-comment">// number</span>
+<span class="hljs-built_in">let</span> isActive = <span class="hljs-literal">true</span>; <span class="hljs-comment">// boolean</span>
+console.<span class="hljs-built_in">log</span>(typeof <span class="hljs-built_in">text</span>); <span class="hljs-comment">// "string"</span>
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="5-variable-naming-conventions">5. Variable Naming Conventions</h3>
+            <ul>
+                <li><strong>Definition:</strong> Use camelCase for variables and avoid reserved keywords.</li>
+                <li><strong>Purpose:</strong> Create readable and consistent variable names.</li>
+                <li>
+                    <p><strong>Use Case:</strong> Improve code readability and maintainability.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong> </p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript"><span class="hljs-keyword">let</span> <span class="hljs-attr">userAge</span> = <span class="hljs-number">25</span>; // camelCase
+<span class="hljs-keyword">let</span> <span class="hljs-attr">isLoggedIn</span> = <span class="hljs-literal">true</span>;
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="6-string-manipulation">6. String Manipulation</h3>
+            <ul>
+                <li><strong>Definition:</strong> Strings are sequences of characters, and JavaScript provides methods
+                    for
+                    manipulation.</li>
+                <li><strong>Purpose:</strong> Perform operations on text data.</li>
+                <li>
+                    <p><strong>Use Case:</strong> Format user inputs or messages.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong> </p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript">let greeting = <span class="hljs-string">"Hello, "</span>;
+let <span class="hljs-built_in">name</span> = <span class="hljs-string">"Ujjwal"</span>;
+console.<span class="hljs-built_in">log</span>(greeting + <span class="hljs-built_in">name</span>); <span class="hljs-comment">// "Hello, Ujjwal"</span>
+console.<span class="hljs-built_in">log</span>(<span class="hljs-built_in">name</span>.length); <span class="hljs-comment">// 6</span>
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="7-operators">7. Operators</h3>
+            <ul>
+                <li><strong>Definition:</strong> Includes arithmetic (+, -), logical (&amp;&amp;, ||), and assignment
+                    (=) operators.
+                </li>
+                <li><strong>Purpose:</strong> Perform calculations or comparisons.</li>
+                <li>
+                    <p><strong>Use Case:</strong> Perform math, compare values, or assign data.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong> </p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript">let result = (<span class="hljs-number">5</span> + <span class="hljs-number">3</span>) * <span class="hljs-number">2</span>;
+console.log(result); <span class="hljs-comment">// 16</span>
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="8-functions">8. Functions</h3>
+            <ul>
+                <li><strong>Definition:</strong> Functions are reusable code snippets that can accept inputs and return
+                    outputs.
+                </li>
+                <li><strong>Purpose:</strong> Reuse blocks of code.</li>
+                <li>
+                    <p><strong>Use Case:</strong> Organize code and perform repetitive tasks.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong> </p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">greet</span>(<span class="hljs-params">name</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello, "</span> + name;
+}
+<span class="hljs-built_in">console</span>.log(greet(<span class="hljs-string">"Ujjwal"</span>)); <span class="hljs-comment">// "Hello, Ujjwal"</span>
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="9-random-number-generation">9. Random Number Generation</h3>
+            <ul>
+                <li><strong>Definition:</strong> The Math.random() function returns a random number between 0 and 1.
+                </li>
+                <li><strong>Purpose:</strong> Generate unpredictable values.</li>
+                <li>
+                    <p><strong>Use Case:</strong> Games, simulations, or selecting random elements.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong> </p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript"><span class="hljs-keyword">let</span> randomNumber = <span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">10</span>; <span class="hljs-comment">// Between 0 and 10</span>
+<span class="hljs-built_in">console</span>.log(randomNumber);
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="10-control-statements">10. Control Statements</h3>
+            <ul>
+                <li><strong>Definition:</strong> if-else statements execute code based on conditions.</li>
+                <li><strong>Purpose:</strong> Direct the flow of execution.</li>
+                <li>
+                    <p><strong>Use Case:</strong> Execute specific logic based on user input or system state.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong> </p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript"><span class="hljs-keyword">let</span> age = <span class="hljs-number">20</span>;
+<span class="hljs-keyword">if</span> (age &gt;= <span class="hljs-number">18</span>) {
+  console.<span class="hljs-built_in">log</span>(<span class="hljs-string">"You can vote."</span>);
+} <span class="hljs-keyword">else</span> {
+  console.<span class="hljs-built_in">log</span>(<span class="hljs-string">"You cannot vote."</span>);
+}
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="11-comparators-and-equality">11. Comparators and Equality</h3>
+            <ul>
+                <li><strong>Definition:</strong> JavaScript provides operators like ==, ===, !=, !==, &lt;, &gt;, &lt;=,
+                    &gt;= to
+                    compare values.</li>
+                <li><strong>Purpose:</strong> Compare two values.</li>
+                <li>
+                    <p><strong>Use Case:</strong> Validate conditions or create decision-making logic.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong> </p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript"><span class="hljs-keyword">let</span> <span class="hljs-attr">a</span> = <span class="hljs-number">5</span>;
+<span class="hljs-keyword">let</span> <span class="hljs-attr">b</span> = <span class="hljs-string">"5"</span>;
+console.log(<span class="hljs-attr">a</span> == b);  // <span class="hljs-literal">true</span> (loose equality)
+console.log(<span class="hljs-attr">a</span> === b); // <span class="hljs-literal">false</span> (strict equality)
+console.log(a &gt; <span class="hljs-number">3</span>);   // <span class="hljs-literal">true</span>
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="12-combining-operators">12. Combining Operators</h3>
+            <ul>
+                <li><strong>Definition:</strong> Use logical operators like &amp;&amp; (AND), || (OR), and ! (NOT) to
+                    create
+                    compound conditions.</li>
+                <li><strong>Purpose:</strong> Combine multiple conditions in a single statement.</li>
+                <li>
+                    <p><strong>Use Case:</strong> Create complex decision-making rules.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong> </p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript"><span class="hljs-keyword">let</span> <span class="hljs-attr">age</span> = <span class="hljs-number">25</span>;
+<span class="hljs-keyword">let</span> <span class="hljs-attr">isMember</span> = <span class="hljs-literal">true</span>;
+<span class="hljs-keyword">if</span> (age &gt; <span class="hljs-number">18</span> &amp;&amp; isMember) {
+  console.log(<span class="hljs-string">"Welcome to the club!"</span>);
+}
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="13-arrays">13. Arrays</h3>
+            <ul>
+                <li><strong>Definition:</strong> Arrays are ordered collections of data.</li>
+                <li><strong>Purpose:</strong> Store and manipulate lists of values.</li>
+                <li>
+                    <p><strong>Use Case:</strong> Store multiple values like a list of names or numbers.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong> </p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript"><span class="hljs-keyword">let</span> colors = [<span class="hljs-string">"red"</span>, <span class="hljs-string">"blue"</span>, <span class="hljs-string">"green"</span>];
+console.<span class="hljs-built_in">log</span>(colors[<span class="hljs-number">0</span>]); <span class="hljs-comment">// "red"</span>
+colors.<span class="hljs-keyword">push</span>(<span class="hljs-string">"yellow"</span>);  <span class="hljs-comment">// Add "yellow"</span>
+colors.<span class="hljs-keyword">pop</span>();           <span class="hljs-comment">// Remove last element</span>
+console.<span class="hljs-built_in">log</span>(colors.length); <span class="hljs-comment">// 3</span>
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="14-loops">14. Loops</h3>
+            <ul>
+                <li><strong>Definition:</strong> JavaScript supports for, while, and do-while loops for iteration.</li>
+                <li><strong>Purpose:</strong> Repeat a block of code.</li>
+                <li><strong>Use Case:</strong> Iterate through arrays or repeat actions.</li>
+                <li>
+                    <p id="example-for-loop-"><strong>Example (For Loop):</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript">let numbers = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
+    for (let i = <span class="hljs-number">0</span>; i &lt; numbers.length; i++) {
+        console.log(numbers[i]);
+    }
+</code></pre>
+                    </div>
+                </li>
+                <li>
+                    <p id="example-for-loop-"><strong>Example (While Loop):</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript">let <span class="hljs-built_in">count</span> = <span class="hljs-number">0</span><span class="hljs-comment">;</span>
+    while (<span class="hljs-built_in">count</span> &lt; <span class="hljs-number">5</span>) {
+        console.log(<span class="hljs-built_in">count</span>)<span class="hljs-comment">;</span>
+        <span class="hljs-built_in">count</span>++<span class="hljs-comment">;</span>
+    }</code></pre>
+                    </div>
+                </li>
+            </ul>
+
+
+
+            <hr>
+            <h3 id="15-type-checking-with-typeof">15. Type Checking with typeof</h3>
+            <ul>
+                <li><strong>Definition:</strong> The typeof operator returns the type of a variable or expression.</li>
+                <li><strong>Purpose:</strong> Identify the type of a value.</li>
+                <li>
+                    <p><strong>Use Case:</strong> Debug code or ensure proper data types.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong> </p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript"><span class="hljs-keyword">let</span> name = <span class="hljs-string">"Ujjwal"</span>;
+<span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">typeof</span> name); <span class="hljs-comment">// "string"</span>
+<span class="hljs-keyword">let</span> age = <span class="hljs-number">25</span>;
+<span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">typeof</span> age);  <span class="hljs-comment">// "number"</span>
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="16-foreach-loop">16. ForEach Loop</h3>
+            <ul>
+                <li><strong>Definition:</strong> The forEach method executes a provided function for each array element.
+                </li>
+                <li><strong>Purpose:</strong> Iterate through array elements.</li>
+                <li>
+                    <p><strong>Use Case:</strong> Simplify iteration tasks.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong> </p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript"><span class="hljs-keyword">let</span> fruits = [<span class="hljs-string">"apple"</span>, <span class="hljs-string">"banana"</span>, <span class="hljs-string">"cherry"</span>];
+fruits.forEach(<span class="hljs-function"><span class="hljs-params">fruit</span> =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(fruit);
+});
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="17-objects">17. Objects</h3>
+            <ul>
+                <li><strong>Definition:</strong> Objects are collections of key-value pairs.</li>
+                <li><strong>Purpose:</strong> Group related data and functions.</li>
+                <li>
+                    <p><strong>Use Case:</strong> Represent entities like users or products.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong> </p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript"><span class="hljs-keyword">let</span> user = {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">"Ujjwal"</span>,
+  <span class="hljs-attr">age</span>: <span class="hljs-number">25</span>,
+  <span class="hljs-attr">greet</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello "</span> + <span class="hljs-keyword">this</span>.name);
+  }
+};
+<span class="hljs-built_in">console</span>.log(user.name); <span class="hljs-comment">// "Ujjwal"</span>
+user.greet();           <span class="hljs-comment">// "Hello Ujjwal"</span>
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="18-object-constructor-functions">18. Object Constructor Functions</h3>
+            <ul>
+                <li><strong>Definition:</strong> Functions that act as templates for creating objects.</li>
+                <li><strong>Purpose:</strong> Create multiple similar objects.</li>
+                <li>
+                    <p><strong>Use Case:</strong> Manage large-scale applications with reusable structures.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong> </p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">User</span>(<span class="hljs-params">name, age</span>) </span>{
+  <span class="hljs-keyword">this</span>.name = name;
+  <span class="hljs-keyword">this</span>.age = age;
+}
+<span class="hljs-keyword">let</span> user1 = <span class="hljs-keyword">new</span> User(<span class="hljs-string">"Alice"</span>, <span class="hljs-number">30</span>);
+<span class="hljs-keyword">let</span> user2 = <span class="hljs-keyword">new</span> User(<span class="hljs-string">"Bob"</span>, <span class="hljs-number">25</span>);
+<span class="hljs-built_in">console</span>.log(user1.name); <span class="hljs-comment">// "Alice"</span>
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="19-higher-order-functions">19. Higher-Order Functions</h3>
+            <ul>
+                <li><strong>Definition:</strong> Functions that operate on other functions.</li>
+                <li><strong>Purpose:</strong> Work with functions as arguments or return values.</li>
+                <li>
+                    <p><strong>Use Case:</strong> Functional programming tasks like filtering, mapping, and reducing.
+                    </p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong> </p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript"><span class="hljs-keyword">let</span> numbers = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
+<span class="hljs-keyword">let</span> doubled = numbers.map(<span class="hljs-function"><span class="hljs-params">num</span> =&gt;</span> num * <span class="hljs-number">2</span>);
+<span class="hljs-built_in">console</span>.log(doubled); <span class="hljs-comment">// [2, 4, 6, 8]</span>
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="20-classes">20. Classes</h3>
+            <ul>
+                <li><strong>Definition:</strong> Classes define object properties and behaviors using constructor and
+                    methods.</li>
+                <li><strong>Purpose:</strong> Create blueprints for objects.</li>
+                <li>
+                    <p><strong>Use Case:</strong> Organize code in object-oriented projects.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong> </p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
+  <span class="hljs-keyword">constructor</span>(brand, model) {
+      <span class="hljs-keyword">this</span>.brand = brand;
+      <span class="hljs-keyword">this</span>.model = model;
+  }
+  start() {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.brand + <span class="hljs-string">" "</span> + <span class="hljs-keyword">this</span>.model + <span class="hljs-string">" is starting."</span>);
+  }
+}
+<span class="hljs-keyword">let</span> car = <span class="hljs-keyword">new</span> Car(<span class="hljs-string">"Toyota"</span>, <span class="hljs-string">"Corolla"</span>);
+car.start(); <span class="hljs-comment">// "Toyota Corolla is starting."</span>
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="21-dates">21. Dates</h3>
+            <ul>
+                <li><strong>Definition:</strong> The Date object provides methods for working with dates.</li>
+                <li><strong>Purpose:</strong> Handle date and time data.</li>
+                <li>
+                    <p><strong>Use Case:</strong> Timestamps, scheduling, and formatting dates.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong> </p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript"><span class="hljs-keyword">let</span> now = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+console.<span class="hljs-built_in">log</span>(now.toDateString()); <span class="hljs-comment">// e.g., "Tue Nov 21 2024"</span>
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+
+            <hr>
+            <h3 id="22-switch-statements">22. Switch Statements</h3>
+            <ul>
+                <li><strong>Definition:</strong> Executes code based on matching cases.</li>
+                <li><strong>Purpose:</strong> Simplify conditional logic for multiple values.</li>
+                <li>
+                    <p><strong>Use Case:</strong> Handle fixed sets of conditions like user roles.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong></p>
+
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript">let <span class="hljs-built_in">day</span> = <span class="hljs-string">"Monday"</span>;
+<span class="hljs-keyword">switch</span> (<span class="hljs-built_in">day</span>) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">"Monday"</span>:
+        console.<span class="hljs-built_in">log</span>(<span class="hljs-string">"Start of the work week!"</span>);
+        <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">"Friday"</span>:
+        console.<span class="hljs-built_in">log</span>(<span class="hljs-string">"Almost weekend!"</span>);
+        <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">default</span>:
+        console.<span class="hljs-built_in">log</span>(<span class="hljs-string">"Just another day."</span>);
+}
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="23-getters-and-setters">23. Getters and Setters</h3>
+            <ul>
+                <li><strong>Definition:</strong> Methods for retrieving and updating object properties.</li>
+                <li><strong>Purpose:</strong> Encapsulate property access and modification.</li>
+                <li>
+                    <p><strong>Use Case:</strong> Control or validate property changes.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span> </span>{
+    constructor(name) {
+        <span class="hljs-built_in">this</span>._name = name;
+    }
+    <span class="hljs-keyword">get</span> name() {
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>._name;
+    }
+    <span class="hljs-keyword">set</span> name(<span class="hljs-keyword">new</span><span class="hljs-type">Name</span>) {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">new</span><span class="hljs-type">Name</span>.length &gt; <span class="hljs-number">0</span>) {
+            <span class="hljs-built_in">this</span>._name = <span class="hljs-keyword">new</span><span class="hljs-type">Name</span>;
+        }
+    }
+}
+let person = <span class="hljs-keyword">new</span> <span class="hljs-type">Person</span>(<span class="hljs-string">"Ujjwal"</span>);
+console.log(person.name); <span class="hljs-comment">// "Ujjwal"</span>
+person.name = <span class="hljs-string">"Amit"</span>;
+console.log(person.name); <span class="hljs-comment">// "Amit"</span>
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="24-break-and-continue-statements">24. Break and Continue Statements</h3>
+            <ul>
+                <li><strong>Definition:</strong> <em>break:</em> Exits the loop.<em>continue:</em> Skips the current
+                    iteration.</li>
+                <li><strong>Purpose:</strong> Modify loop behavior.</li>
+                <li><strong>Use Case:</strong> Skip invalid data or exit loops based on conditions.</li>
+                <li><strong>Example:</strong>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) {
+    <span class="hljs-keyword">if</span> (i === <span class="hljs-number">3</span>) <span class="hljs-keyword">continue</span>;
+    console.<span class="hljs-built_in">log</span>(i); <span class="hljs-comment">// 0, 1, 2, 4</span>
+}
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="19-best-practices-in-javascript">19. Best Practices in JavaScript</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> JavaScript best practices are coding guidelines that help write
+                        clean, maintainable, and efficient code. Following these practices minimizes bugs, improves
+                        readability, and makes debugging easier.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong></p>
+                    <ul>
+                        <li>Ensure consistency and clarity in coding.</li>
+                        <li>Reduce the risk of errors and enhance collaboration.</li>
+                        <li>Improve code performance and scalability.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Adhering to best practices is essential when:</p>
+                    <ul>
+                        <li>Developing large-scale applications or libraries.</li>
+                        <li>Collaborating on projects with multiple developers.</li>
+                        <li>Maintaining and debugging legacy code.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Best Practices:</strong></p>
+                    <ol>
+                        <li>
+                            <p>Use <em>const</em> and <em>let</em> Instead of <em>var</em>:</p>
+                            <p><em>const</em>: For variables that don’t change.</p>
+                            <p><em>let</em>: For variables that may change.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                    <pre><code class="language-javascript">// Avoid
+var name = "Ujjwal";
+
+// Use
+const age = 25; // Constant value
+let score = 10; // Value can change
+score += 5;
+</code></pre>
+                            </div>
+                        </li>
+                         <li>
+                            <p>Enable Strict Mode:</p>
+                            <p>Strict mode helps catch common mistakes like undeclared variables, improving code
+                                quality.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <pre><code class="language-javascript">'use strict';
+
+// Example
+function myFunction() {
+    x = 10; // Error: x is not declared
+}
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Write Descriptive Variable and Function Names:</p>
+                            <p>Use meaningful names to improve readability and make your code self-explanatory.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <pre><code class="language-javascript">// Avoid
+function x(a, b) {
+    return a + b;
+}
+
+// Use
+function calculateSum(num1, num2) {
+    return num1 + num2;
+}
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Comment Your Code:</p>
+                            <p>Add comments to explain why specific logic is implemented, especially for complex
+                                sections.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <pre><code class="language-javascript">// Calculate the total price with tax
+const totalPrice = price + (price * taxRate);
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Avoid Global Variables:</p>
+                            <p>Minimize the use of global variables to avoid conflicts and unintended overwrites.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <pre><code class="language-javascript">// Avoid
+globalVariable = "This is bad";
+
+// Use
+function myFunction() {
+    const localVariable = "This is good";
+}
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Keep Functions Small and Focused:</p>
+                            <p>Break down larger tasks into smaller, reusable functions that do one thing well.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <pre><code class="language-javascript">// Avoid
+function handleEverything() {
+    // Too many responsibilities
+}
+
+// Use
+function calculateSum(a, b) {
+    return a + b;
+}
+
+function displaySum(sum) {
+    console.log(`Sum: ${sum}`);
+}
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Use Template Literals for Strings:</p>
+                            <p>Template literals make string concatenation cleaner and more readable.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <pre><code class="language-javascript">const name = "Ujjwal";
+const greeting = `Hello, ${name}! Welcome to JavaScript.`;
+console.log(greeting);
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Use Default Parameters:</p>
+                            <p>Providing default values for function parameters helps avoid errors when arguments are
+                                not provided.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <pre><code class="language-javascript">function greet(name = "Guest") {
+    console.log(`Hello, ${name}!`);
+}
+greet(); // Output: Hello, Guest!
+</code></pre>
+                            </div>
+                        </li>
+
+                        <li>
+                            <p>Avoid Nested Loops and Conditions:</p>
+                            <p>Refactoring deeply nested loops and conditions improves readability and reduces
+                                complexity.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <pre><code class="language-javascript">// Avoid
+if (condition1) {
+    if (condition2) {
+        if (condition3) {
+            // Too many levels
+        }
+    }
+}
+
+// Use
+if (!condition1 || !condition2 || !condition3) return;
+
+// Code here is clean and flat
+</code></pre>
+                            </div>
+                        </li>
+
+                        <li>
+                            <p>Use Arrow Functions:</p>
+                            <p>Arrow functions provide a cleaner syntax and preserve the `this` context in JavaScript.
+                            </p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <pre><code class="language-javascript">const numbers = [1, 2, 3];
+const squares = numbers.map(num => num * num);
+console.log(squares); // Output: [1, 4, 9]
+</code></pre>
+                            </div>
+                        </li>
+
+                        <li>
+                            <p>Handle Errors Gracefully:</p>
+                            <p>Use `try...catch` blocks to handle errors and prevent the program from crashing.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <pre><code class="language-javascript">try {
+    const result = riskyOperation();
+    console.log(result);
+} catch (error) {
+    console.error("An error occurred:", error);
+}
+</code></pre>
+                            </div>
+                        </li>
+
+                        <li>
+                            <p>Write Modular Code:</p>
+                            <p>Breaking your code into smaller, reusable modules enhances maintainability and
+                                reusability.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <pre><code class="language-javascript">// mathUtils.js
+export function add(a, b) {
+    return a + b;
+}
+
+// app.js
+import { add } from './mathUtils.js';
+console.log(add(5, 10)); // Output: 15
+</code></pre>
+                            </div>
+                        </li>
+
+                        <li>
+                            <p>Test Your Code:</p>
+                            <p>Write unit tests to ensure your code behaves as expected, which helps catch errors early.
+                            </p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <pre><code class="language-javascript">function add(a, b) {
+    return a + b;
+}
+
+// Test case
+console.assert(add(2, 3) === 5, "Test failed");
+</code></pre>
+                            </div>
+                        </li>
+
+            </ul>
+
+
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2024 Ujjwal Garai. All rights reserved.</p>
+    </div>
+
+    <!-- Prism.js Scripts for Syntax Highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Local JS -->
+    <script src="../script.js""></script>
+    </body>
+    </html>

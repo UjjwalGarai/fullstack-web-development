@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- Prism.js Stylesheet for syntax highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <!-- toogle icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="center-items">
+            <a href="../index.html">Home</a>
+            <a href="./html.html">HTML</a>
+            <a href="./css.html">CSS</a>
+            <a href="./js.html">JavaScript</a>
+            <a href="./dom.html">DOM</a>
+            <a href="./jquery.html">JQuery</a>
+            <a href="./text.html">Text</a>
+        </div>
+        <div>
+            <i id="toggle-color-icon" class="fas fa-moon"></i> <!-- Icon for toggle -->
+        </div>
+    </div>
+
+    <!-- Body Contents -->
+    <div class="body-content">
+        <!-- table of contents -->
+        <div class="table-of-contents">
+            <ol>
+                <li id="table-of-contents">Table of Contents</li>
+                <li><a href="#1-introduction-to-css">Introduction to CSS</a></li>
+                <li><a href="#2-css-syntax">CSS Syntax</a></li>
+                <li><a href="#3-selectors">Selectors</a></li>
+                <li><a href="#4-colors-and-backgrounds">Colors and Backgrounds</a></li>
+                <li><a href="#5-box-model">Box Model</a></li>
+                <li><a href="#6-flexbox">Flexbox</a></li>
+                <li><a href="#7-grid-layout">Grid Layout</a></li>
+                <li><a href="#8-typography">Typography</a></li>
+                <li><a href="#9-positioning">Positioning</a></li>
+                <li><a href="#10-media-queries">Media Queries</a></li>
+                <li><a href="#11-transitions-and-animations">Transitions and Animations</a></li>
+                <li><a href="#12-pseudo-classes-and-pseudo-elements">Pseudo-classes and Pseudo-elements</a></li>
+                <li><a href="#13-advanced-selectors">Advanced Selectors</a></li>
+                <li><a href="#14-custom-properties-css-variables">Custom Properties (CSS Variables)</a></li>
+                <li><a href="#15-css-frameworks">CSS Frameworks</a></li>
+                <li><a href="#16-responsive-design-principles">Responsive Design Principles</a></li>
+                <li><a href="#17-css-debugging-tips">CSS Debugging Tips</a></li>
+            </ol>
+        </div>
+        <!-- Step by step guide -->
+        <div class="step-by-step-guide">
+            <h1 class="title">Welcome to CSS Step-by-Step tutorials</h1>
+            <!-- <hr> -->
+
+            <p>Welcome to the <strong>CSS Tutorial</strong>! This tutorial is designed to help learners grasp the
+                fundamentals of CSS and progress to advanced concepts step by step. Each step includes definitions,
+                purposes, use cases, and practical examples.</p>
+            <hr>
+            <h3 id="1-introduction-to-css">1. Introduction to CSS</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> CSS (Cascading Style Sheets) is a stylesheet language used to
+                        describe the
+                        presentation of a document written in HTML or XML.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> To style web pages, control layouts, and improve user experience.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Changing colors, layouts, and fonts.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+    <span class="hljs-selector-tag">h1</span> {
+      <span class="hljs-attribute">color</span>: blue;
+      <span class="hljs-attribute">text-align</span>: center;
+    }
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Welcome to CSS!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <h3 id="2-css-syntax">2. CSS Syntax</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> CSS syntax consists of a selector and a declaration block.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> To define rules for styling elements.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Applying specific styles to targeted elements.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-css"><span class="hljs-comment">/* Selector */</span> 
+<span class="hljs-selector-tag">p</span> {
+  <span class="hljs-attribute">color</span>: green; <span class="hljs-comment">/* Declaration */</span>
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>; <span class="hljs-comment">/* Declaration */</span>
+}
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <h3 id="3-selectors">3. Selectors</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> CSS selectors are used to select the HTML elements to style.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> Target elements efficiently.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Styling all
+                    <p> elements or specific IDs/classes.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-css"><span class="hljs-comment">/* Class Selector */</span>
+<span class="hljs-selector-class">.box</span> {
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid black;
+}
+
+<span class="hljs-comment">/* ID Selector */</span>
+<span class="hljs-selector-id">#unique-box</span> {
+  <span class="hljs-attribute">background-color</span>: yellow;
+}
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <h3 id="4-colors-and-backgrounds">4. Colors and Backgrounds</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> Controls text color, background color, and images.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> Enhance visual aesthetics.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Highlighting important sections.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-css"><span class="hljs-selector-tag">body</span> {
+  <span class="hljs-attribute">background-color</span>: lightblue;
+}
+
+<span class="hljs-selector-tag">h1</span> {
+  <span class="hljs-attribute">color</span>: darkred;
+}
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <h3 id="5-box-model">5. Box Model</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> CSS box model defines the rectangular boxes generated for elements.
+                    </p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> Understand padding, borders, margins, and content.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Create spaced, styled containers.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-css"><span class="hljs-selector-tag">div</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">5px</span> solid red;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span>;
+}
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <h3 id="6-flexbox">6. Flexbox</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> A CSS layout model for flexible arrangements.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> Align and distribute space dynamically.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Centering content, creating navigation bars.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-css"><span class="hljs-selector-class">.container</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">justify-content</span>: center;
+  <span class="hljs-attribute">align-items</span>: center;
+}
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <h3 id="7-grid-layout">7. Grid Layout</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> A CSS module for creating grid-based layouts.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> Build complex layouts with rows and columns.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Photo galleries, dashboards.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-css"><span class="hljs-selector-class">.grid-container</span> {
+  <span class="hljs-attribute">display</span>: grid;
+  <span class="hljs-attribute">grid-template-columns</span>: auto auto auto;
+  <span class="hljs-attribute">gap</span>: <span class="hljs-number">10px</span>;
+}
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <h3 id="8-typography">8. Typography</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> Styling text content.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> Improve readability and aesthetics.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Customizing fonts, sizes, and line spacing.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-css"><span class="hljs-selector-tag">p</span> {
+  <span class="hljs-attribute">font-family</span>: Arial, sans-serif;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">18px</span>;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.6</span>;
+}
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <h3 id="9-positioning">9. Positioning</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> CSS positioning specifies how elements are placed.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> Position elements dynamically.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Creating overlays, sticky headers.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-css"><span class="hljs-selector-tag">div</span> {
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">50px</span>;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">100px</span>;
+}
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <h3 id="10-media-queries">10. Media Queries</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> CSS feature for responsive designs.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> Apply styles based on screen size or device type.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Mobile-friendly layouts.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-css">@<span class="hljs-keyword">media</span> (max-width: <span class="hljs-number">600px</span>) {
+  <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: lightgreen;
+  }
+}
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <h3 id="11-transitions-and-animations">11. Transitions and Animations</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> Enhance interactivity with smooth effects.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> Create visually appealing transitions.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Button hover effects.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-css"><span class="hljs-selector-tag">button</span> {
+  <span class="hljs-attribute">transition</span>: background-color <span class="hljs-number">0.5s</span>;
+}
+
+<span class="hljs-selector-tag">button</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">background-color</span>: yellow;
+}
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <h3 id="12-pseudo-classes-and-pseudo-elements">12. Pseudo-classes and Pseudo-elements</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> Select specific states or parts of elements.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> Style dynamic or specific parts of elements.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Highlight the first line of a paragraph.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-css"><span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">::first-line</span> {
+  <span class="hljs-attribute">font-weight</span>: bold;
+}
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <h3 id="13-advanced-selectors">13. Advanced Selectors</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> Complex selectors for specific styling.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> Precise targeting.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Styling nested or sibling elements.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-css"><span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span>:first-child {
+  <span class="hljs-attribute">color</span>: red;
+}
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <h3 id="14-custom-properties-css-variables-">14. Custom Properties (CSS Variables)</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> Variables for reusable values.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> Simplify and standardize styles.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Define consistent theme colors.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-css"><span class="hljs-selector-pseudo">:root</span> {
+  <span class="hljs-attribute">--main-color</span>: <span class="hljs-number">#ff5733</span>;
+}
+
+<span class="hljs-selector-tag">h1</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--main-color);
+}
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <h3 id="15-css-frameworks">15. CSS Frameworks</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> Predefined stylesheets for faster development.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> Save time and maintain consistency.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Bootstrap for responsive layouts.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-html">
+&lt;<span class="hljs-keyword">link</span> rel=<span class="hljs-string">"stylesheet"</span> href=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"</span>&gt;
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <h3 id="16-responsive-design-principles">16. Responsive Design Principles</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> Design practices for various devices.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> Ensure usability on all screen sizes.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Scalable navigation menus.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <pre><code class="language-css">@<span class="hljs-keyword">media</span> (max-width: <span class="hljs-number">768px</span>) {
+  <span class="hljs-selector-tag">nav</span> {
+    <span class="hljs-attribute">display</span>: none;
+  }
+}
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <h3 id="17-css-debugging-tips">17. CSS Debugging Tips</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> CSS debugging refers to the process of identifying and fixing issues
+                        in the styling or layout of a webpage. It involves analyzing how CSS rules are applied and why
+                        unexpected behaviors occur.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> To ensure that styles are applied correctly and to resolve
+                        inconsistencies or errors in the design, such as misaligned elements, incorrect colors, or
+                        broken layouts.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Debugging tools and strategies are essential for handling situations
+                        like:</p>
+                    <ul>
+                        <li>Resolving layout issues caused by conflicting styles.</li>
+                        <li>Correcting styles not being applied as expected.</li>
+                        <li>Identifying and fixing browser compatibility problems.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Examples of Debugging Tips:</strong></p>
+                    <ol>
+                        <li>
+                            <p>Use Browser Developer Tools:</p>
+                            <ul>
+                                <li>Right-click on an element in the browser and select Inspect.</li>
+                                <li>Examine applied styles, override properties, and box model information.</li>
+                                <li>Check for unused or overridden CSS rules.</li>
+                            </ul>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <pre><code class="language-html">&lt;!-- Example --&gt;
+&lt;p style="color: red;"&gt;This text is red.&lt;/p&gt;
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Comment Out Sections: Temporarily disable parts of your CSS to identify conflicting
+                                rules.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <pre><code class="language-css">/* background-color: blue; */
+color: white;
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Add Temporary Borders: Use borders to visualize the boundaries of elements.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <pre><code class="language-css">div {
+    border: 1px solid red;
+}
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Check the Box Model: Misalignments often stem from padding, borders, or margins. Use
+                                DevTools to inspect the box model and adjust values.</p>
+                        </li>
+                        <li>
+                            <p>Use CSS Validation Tools: Run your CSS through a validator (e.g., <a target="_blank"
+                                    href="https://jigsaw.w3.org/css-validator/#validate_by_input"> W3C CSS
+                                    Validator</a> ) to catch syntax errors.</p>
+                        </li>
+                        <li>
+                            <p>Handle Specificity Conflicts: If a style isn't being applied, check the specificity of
+                                your selectors. Inline styles or ID selectors can override less specific rules.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <pre><code class="language-css">/* Example of Specificity */
+#unique {
+    color: blue; /* Overrides class and element selectors */
+}
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Test Across Browsers: Check your design on multiple browsers to identify compatibility
+                                issues.</p>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <p><strong>Conclusion:</strong> Effective debugging ensures your CSS behaves as intended across
+                        various
+                        devices and
+                        browsers, leading to a polished and user-friendly design.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2024 Ujjwal Garai. All rights reserved.</p>
+    </div>
+
+    <!-- Prism.js Scripts for Syntax Highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Local JS -->
+    <script src="../script.js""></script>
+    </body>
+    </html>

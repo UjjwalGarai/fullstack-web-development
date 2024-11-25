@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    gap: 15px;
+    background-color: rgb(226, 226, 181);
+    padding: 10px;
+    position: sticky;
+    top: 0; 
+    z-index: 2;
+}
+
+.center-items {
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* Center the links */
+    flex-grow: 1; /* Take up remaining space to ensure items are centered */
+}
+
+.center-items > a {
+    text-decoration: none;
+    color: rgb(66, 62, 62);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.center-items > a:hover {
+    /* text-decoration: none; */
+    color: rgb(22, 44, 240);
+    background-color: rgb(209, 209, 156); /* Optional: Add a subtle background on hover */
+}
+
+/* Toggle Icon */
+
+#toggle-color-icon {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+
+/* Toggle Icon */
+
+#toggle-color-icon {
+    margin-left: auto;
+}
+
+#toggle-color-icon {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#toggle-color-icon:hover {
+    transform: rotate(30deg);
+}
+
+.body-content {
+    display: flex;
+    gap: 2%;
+    overflow: visible;
+}
+.body-content > .table-of-contents {
+    width: 25%;
+    position: sticky;
+    top: 45px; /* Ensures it sticks at the top when scrolling */
+    height: calc(100vh - 45px);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-right: 2px solid #ccc;
+}
+.body-content > .step-by-step-guide {
+    width: 70%;
+    top: 45px;
+    /* z-index: -1; */
+    padding: 20px;
+}
+html {
+    scroll-padding-top: 45px; /* Adjust scroll position to account for navbar height */
+}
+#table-of-contents{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.table-of-contents > ol {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.table-of-contents > ol > li {
+    margin-bottom: 10px;
+}
+
+.table-of-contents > ol > li > a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
+    font-size: 0.9rem;
+    /* font-weight: bold; */
+}
+
+
+
+.title{
+    text-align: center;
+}
+
+
+/* Handling Code Block */
+.code-container {
+    position: relative;
+    background-color: #b15e5e;
+    color: white;
+    border-radius: 8px;
+    /* padding: 10px; */
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background-color: #1e1e1e;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0;
+    overflow-x: auto;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.copy-btn:hover {
+    background-color: #45a049;
+}
+
+.copy-btn:focus {
+    outline: none;
+}
+
+.copied {
+    background-color: #0d7e00;
+    animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+    0% { background-color: #0d7e00; }
+    100% { background-color: #4CAF50; }
+}
+
+
+@media screen and (max-width: 768px) {
+    .center-items > a {
+        font-size: 0.9rem;
+    }
+    .body-content {
+        flex-direction: column;
+    }
+    .body-content > .table-of-contents {
+        width: 100%;
+        position: relative;
+        top: 0; /* Reset top for relative positioning */
+        /* z-index: -1; */
+        height: auto;
+    }
+    .body-content > .step-by-step-guide {
+        width: 100%;
+        /* z-index: -1; */
+        padding: 20px;
+    }
+}
