@@ -7,7 +7,7 @@
     <title>HTML Tutorial</title>
     <link rel="stylesheet" href="../style.css">
     <!-- Prism.js Stylesheet for syntax highlighting -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
     <!-- toogle icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -79,7 +79,7 @@
                 <li>
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
@@ -112,7 +112,7 @@
                 <li>
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-css"><span class="hljs-comment">/* Selector */</span> 
 <span class="hljs-selector-tag">p</span> {
   <span class="hljs-attribute">color</span>: green; <span class="hljs-comment">/* Declaration */</span>
@@ -137,7 +137,7 @@
                 <li>
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-css"><span class="hljs-comment">/* Class Selector */</span>
 <span class="hljs-selector-class">.box</span> {
   <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid black;
@@ -165,7 +165,7 @@
                 <li>
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-css"><span class="hljs-selector-tag">body</span> {
   <span class="hljs-attribute">background-color</span>: lightblue;
 }
@@ -192,7 +192,7 @@
                 <li>
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-css"><span class="hljs-selector-tag">div</span> {
   <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
@@ -217,7 +217,7 @@
                 <li>
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-css"><span class="hljs-selector-class">.container</span> {
   <span class="hljs-attribute">display</span>: flex;
   <span class="hljs-attribute">justify-content</span>: center;
@@ -241,7 +241,7 @@
                 <li>
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-css"><span class="hljs-selector-class">.grid-container</span> {
   <span class="hljs-attribute">display</span>: grid;
   <span class="hljs-attribute">grid-template-columns</span>: auto auto auto;
@@ -265,7 +265,7 @@
                 <li>
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-css"><span class="hljs-selector-tag">p</span> {
   <span class="hljs-attribute">font-family</span>: Arial, sans-serif;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">18px</span>;
@@ -289,7 +289,7 @@
                 <li>
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-css"><span class="hljs-selector-tag">div</span> {
   <span class="hljs-attribute">position</span>: absolute;
   <span class="hljs-attribute">top</span>: <span class="hljs-number">50px</span>;
@@ -313,7 +313,7 @@
                 <li>
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-css">@<span class="hljs-keyword">media</span> (max-width: <span class="hljs-number">600px</span>) {
   <span class="hljs-selector-tag">body</span> {
     <span class="hljs-attribute">background-color</span>: lightgreen;
@@ -337,7 +337,7 @@
                 <li>
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-css"><span class="hljs-selector-tag">button</span> {
   <span class="hljs-attribute">transition</span>: background-color <span class="hljs-number">0.5s</span>;
 }
@@ -363,7 +363,7 @@
                 <li>
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-css"><span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">::first-line</span> {
   <span class="hljs-attribute">font-weight</span>: bold;
 }
@@ -385,7 +385,7 @@
                 <li>
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-css"><span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span>:first-child {
   <span class="hljs-attribute">color</span>: red;
 }
@@ -407,7 +407,7 @@
                 <li>
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-css"><span class="hljs-selector-pseudo">:root</span> {
   <span class="hljs-attribute">--main-color</span>: <span class="hljs-number">#ff5733</span>;
 }
@@ -433,7 +433,7 @@
                 <li>
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html">
 &lt;<span class="hljs-keyword">link</span> rel=<span class="hljs-string">"stylesheet"</span> href=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"</span>&gt;
 </code></pre>
@@ -454,7 +454,7 @@
                 <li>
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-css">@<span class="hljs-keyword">media</span> (max-width: <span class="hljs-number">768px</span>) {
   <span class="hljs-selector-tag">nav</span> {
     <span class="hljs-attribute">display</span>: none;
@@ -496,7 +496,7 @@
                                 <li>Check for unused or overridden CSS rules.</li>
                             </ul>
                             <div class="code-container">
-                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                                 <pre><code class="language-html">&lt;!-- Example --&gt;
 &lt;p style="color: red;"&gt;This text is red.&lt;/p&gt;
 </code></pre>
@@ -506,7 +506,7 @@
                             <p>Comment Out Sections: Temporarily disable parts of your CSS to identify conflicting
                                 rules.</p>
                             <div class="code-container">
-                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                                 <pre><code class="language-css">/* background-color: blue; */
 color: white;
 </code></pre>
@@ -515,7 +515,7 @@ color: white;
                         <li>
                             <p>Add Temporary Borders: Use borders to visualize the boundaries of elements.</p>
                             <div class="code-container">
-                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                                 <pre><code class="language-css">div {
     border: 1px solid red;
 }
@@ -535,7 +535,7 @@ color: white;
                             <p>Handle Specificity Conflicts: If a style isn't being applied, check the specificity of
                                 your selectors. Inline styles or ID selectors can override less specific rules.</p>
                             <div class="code-container">
-                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                                 <pre><code class="language-css">/* Example of Specificity */
 #unique {
     color: blue; /* Overrides class and element selectors */
@@ -570,6 +570,6 @@ color: white;
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Local JS -->
-    <script src="../script.js""></script>
+    <script src="../script.js"></script>
     </body>
     </html>

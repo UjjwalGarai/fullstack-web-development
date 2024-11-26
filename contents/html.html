@@ -7,7 +7,7 @@
     <title>HTML Tutorial</title>
     <link rel="stylesheet" href="../style.css">
     <!-- Prism.js Stylesheet for syntax highlighting -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
     <!-- toogle icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -80,7 +80,7 @@
                 <li>
                     <p><strong>Example:</strong> </p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -111,7 +111,7 @@
                 <li>
                     <p><strong>Example:</strong> </p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html">&lt;h1&gt;Main Heading&lt;/h1&gt;
 &lt;h2&gt;Subheading&lt;/h2&gt;
 &lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code></pre>
@@ -135,7 +135,7 @@
                 <li>
                     <p><strong>Example:</strong>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html">&lt;ol&gt;
     &lt;li&gt;Step One&lt;/li&gt;
     &lt;li&gt;Step Two&lt;/li&gt;
@@ -161,7 +161,7 @@
                 <li><strong>Use Case:</strong> For creating menus or linking to other websites.</li>
                 <li><strong>Example:</strong>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html">&lt;a href="https://example.com"&gt;VisitExample&lt;/a&gt;
 &lt;nav&gt;
     &lt;ul&gt;
@@ -172,21 +172,17 @@
                     </div>
                 </li>
             </ul>
-
-
-
-            </code></pre>
             <hr>
             <h3 id="5-images">5. Images</h3>
             <ul>
-                <li><strong>Definition:</strong> Images are added using the <img> tag.</li>
+                <li><strong>Definition:</strong> Images are added using the <code>&lt;img&gt;</code> tag.</li>
                 <li><strong>Purpose:</strong> To display visual content.</li>
                 <li><strong>Use Case:</strong> To enhance user engagement with images.</li>
                 <li><strong>Example:</strong>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
-                        <pre><code class="language-html">&lt;<span class="hljs-selector-tag">img</span> src="image.jpg"</span> alt="Descriptive Text"</span> <span class="hljs-attribute">width</span>="300"</span> height="200"&gt;
-    </code></pre>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                        <pre><code class="language-html">&lt;<span class="hljs-selector-tag">img</span> src="image.jpg"  alt="Descriptive Text" <span class="hljs-attribute">width</span>="300" height="200"&gt;
+</code></pre>
                     </div>
                 </li>
             </ul>
@@ -201,8 +197,8 @@
                 <li><strong>Use Case:</strong> For displaying schedules, data, or comparison charts.</li>
                 <li><strong>Example:</strong>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
-                        <pre><code class="language-html">&lt;table</span> border</span>="1"&gt;
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                        <pre><code class="language-html">&lt;table border="1"&gt;
     &lt;tr&gt;
       &lt;th&gt;Name&lt;/th&gt;
       &lt;th&gt;Age&lt;/th&gt;
@@ -219,17 +215,19 @@
             <hr>
             <h3 id="7-forms">7. Forms</h3>
             <ul>
-                <li><strong>Definition:</strong> Forms allow user input with <form> and various input elements.</li>
+                <li><strong>Definition:</strong> Forms allow user input with <code>&lt;form&gt;</code> and various input
+                    elements.</li>
                 <li><strong>Purpose:</strong> To collect and process user data.</li>
                 <li><strong>Use Case:</strong> Login forms, sign-ups, feedback, and search functionality.</li>
                 <li><strong>Example:</strong>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
-                        <pre><code class="language-html">&lt;<span class="hljs-keyword">form</span> action="/submit"</span> method="post"&gt;
-    &lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>="name"&gt;Name:&lt;/<span class="hljs-keyword">label&gt;
-    &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>="text"</span> id="name"</span> name="name"&gt;
-    &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>="submit"</span> value="Submit"&gt;
-&lt;/<span class="hljs-keyword">form&gt;</code></pre>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                        <pre><code class="language-html">&lt;form action="/submit" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+</code></pre>
                     </div>
                 </li>
             </ul>
@@ -241,7 +239,7 @@
                 <li><strong>Use Case:</strong> For better-organized web pages.</li>
                 <li><strong>Example:</strong>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html">&lt;header&gt;
     &lt;h1&gt;Website Title&lt;/h1&gt;
 &lt;/header&gt;
@@ -265,7 +263,7 @@
                 <li><strong>Use Case:</strong> Adding tutorials, podcasts, or entertainment content.</li>
                 <li><strong>Example:</strong>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html">&lt;video controls&gt;
     &lt;source src=&quot;video.mp4&quot; type=&quot;video/mp4&quot;&gt;
 &lt;/video&gt;
@@ -285,9 +283,9 @@
                 <li><strong>Use Case:</strong> Setting IDs, classes, or styles.</li>
                 <li><strong>Example:</strong>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html"> &lt;p id="intro" class="highlight" style="color: red;"&gt;Hello World!&lt;/p&gt;
-            </code></pre>
+</code></pre>
                     </div>
                 </li>
             </ul>
@@ -300,8 +298,8 @@
                 <li><strong>Use Case:</strong> Writing symbols or reserved characters.</li>
                 <li><strong>Example:</strong>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
-                        <pre><code class="language-html"><span class="hljs-params">&lt;p&gt;<span class="hljs-number">5</span> <span class="hljs-variable">&amp;lt</span>; <span class="hljs-number">10</span> <span class="hljs-variable">&amp;amp</span>; <span class="hljs-number">10</span> <span class="hljs-variable">&amp;gt</span>; <span class="hljs-number">1</span><span class="hljs-params">&lt;/p&gt;
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                        <pre><code class="language-html">&lt;p&gt;5&amp;lt; 10 &amp;amp; 10 &amp;gt; 1&lt;/p&gt;
 </code></pre>
                     </div>
                 </li>
@@ -314,10 +312,10 @@
                 <li><strong>Use Case:</strong> Creating required or pattern-matching fields.</li>
                 <li><strong>Example:</strong>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
-                        <pre><code class="language-html"><span class="xml">&lt;form&gt;
-    &lt;input</span> type</span>="text"</span> required</span> pattern</span>="[A-Za-z]</span></span></span><span class="hljs-template-variable">{3,}</span><span class="xml">"&gt;
-&lt;/form&gt;</span>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                        <pre><code class="language-html">&lt;form&gt;
+    &lt;input type="text" required pattern="[A-Za-z]{3,}"&gt;
+&lt;/form&gt;
 </code></pre>
                     </div>
                 </li>
@@ -330,8 +328,8 @@
                 <li><strong>Use Case:</strong> Embedding YouTube videos, Google Maps, or other content.</li>
                 <li><strong>Example:</strong>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
-                        <pre><code class="language-html">&lt;<span class="hljs-selector-tag">iframe</span> src="https://example.com"</span> <span class="hljs-attribute">width</span>="600"</span> height="400"&gt;&lt;/iframe&gt;
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                        <pre><code class="language-html">&lt;<span class="hljs-selector-tag">iframe</span> src="https://example.com" <span class="hljs-attribute">width</span>="600" height="400"&gt;&lt;/iframe&gt;
 </code></pre>
                     </div>
                 </li>
@@ -346,9 +344,9 @@
                 </li>
                 <li><strong>Example:</strong>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
-                        <pre><code class="language-html">&lt;progress</span> value</span>="70"</span> max</span>="100"&gt;&lt;/progress&gt;
-    </code></pre>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                        <pre><code class="language-html">&lt;progress value>="70" max="100"&gt;&lt;/progress&gt;
+</code></pre>
                     </div>
                 </li>
             </ul>
@@ -366,14 +364,14 @@
                     search engines.</li>
                 <li><strong>Example:</strong>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;
-&lt;html</span> lang</span>="en"&gt;
+&lt;html</span> lang="en"&gt;
     &lt;head&gt;
-        &lt;meta</span> charset</span>="UTF-8"&gt;
-        &lt;meta</span> name</span>="viewport"</span> content</span>="width=device-width, initial-scale=1.0"&gt;
-        &lt;meta</span> name</span>="description"</span> content</span>="Learn HTML step-by-step"&gt;
-        &lt;meta</span> name</span>="author"</span> content</span>="Your Name"&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;meta name="description" content="Learn HTML step-by-step"&gt;
+        &lt;meta name="author" content="Your Name"&gt;
         &lt;title&gt;Document Metadata&lt;/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
@@ -395,12 +393,12 @@
                 <li><strong>Use Case:</strong> Adding custom styles to headings, paragraphs, links, and more.</li>
                 <li><strong>Example:</strong>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
-                        <pre><code class="language-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;
-&lt;html</span> lang</span>="en"&gt;
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                        <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
     &lt;head&gt;
         &lt;title&gt;CSS Integration&lt;/title&gt;
-        &lt;style&gt;<span class="css">
+        &lt;style&gt;
             h1 {
                 color: blue;
                 text-align: center;
@@ -432,15 +430,15 @@
                     inputs.</li>
                 <li><strong>Example:</strong>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;
-&lt;html</span> lang</span>="en"&gt;
+&lt;html</span> lang="en"&gt;
     &lt;head&gt;
         &lt;title&gt;JavaScript Integration&lt;/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
         &lt;h1&gt;Click the Button&lt;/h1&gt;
-        &lt;button</span> onclick</span>="alert('Hello, World!')"&gt;Click Me&lt;/button&gt;
+        &lt;button onclick="alert('Hello, World!')"&gt;Click Me&lt;/button&gt;
     &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -464,20 +462,23 @@
                 </li>
                 <li>Keep Code Organized: Indent properly and add comments.</li>
                 <li>Avoid Inline Styles: Use external CSS for styling.</li>
-                <li>Validate Code:<span> <p>Use tools like the <a target="_blank" href="https://validator.w3.org/detailed.html#validate-by-input">W3C HTML
-                    Validator</a>.</p></span>
+                <li>Validate Code:<span>
+                        Use tools like the <a target="_blank"
+                                href="https://validator.w3.org/detailed.html#validate-by-input">W3C HTML
+                                Validator.</a>
+                    </span>
                 </li>
                 <li>Responsive Design: Use the <code>&lt;meta name=&quot;viewport&quot;&gt;</code> tag for mobile
                     compatibility.
                 </li>
                 <li><strong>Example:</strong>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;
-&lt;html</span> lang</span>="en"&gt;
+&lt;html</span> lang="en"&gt;
     &lt;head&gt;
-        &lt;meta</span> charset</span>="UTF-8"&gt;
-        &lt;meta</span> name</span>="viewport"</span> content</span>="width=device-width, initial-scale=1.0"&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
         &lt;title&gt;Best Practices&lt;/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
@@ -497,7 +498,7 @@
                 </li>
             </ul>
 
-            
+
 
         </div>
     </div>
@@ -514,6 +515,7 @@
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Local JS -->
-    <script src="../script.js""></script>
+    <script src="../script.js"></script>
 </body>
+
 </html>

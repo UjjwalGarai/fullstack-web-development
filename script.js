@@ -82,20 +82,21 @@ toggleIcon.addEventListener('click', () => {
 
 
 
-function copyCode() {
-    const codeBlock = document.querySelector('pre code');
+function copyCode(event) {
+    const button = event.target; // Get the button that triggered the event
+    const codeBlock = button.nextElementSibling.querySelector('code'); // Select the corresponding code block
     const textArea = document.createElement('textarea');
-    textArea.value = codeBlock.innerText;
+    textArea.value = codeBlock.innerText; // Get the text content of the code block
     document.body.appendChild(textArea);
     textArea.select();
     document.execCommand('copy');
     document.body.removeChild(textArea);
 
-    const copyButton = document.querySelector('.copy-btn');
-    copyButton.innerText = 'Copied!';
-    copyButton.classList.add('copied');
-    setTimeout(function() {
-        copyButton.innerText = 'Copy';
-        copyButton.classList.remove('copied');
+    // Update the button's text to indicate the code has been copied
+    button.innerText = 'Copied!';
+    button.classList.add('copied');
+    setTimeout(() => {
+        button.innerText = 'Copy';
+        button.classList.remove('copied');
     }, 2000);
 }

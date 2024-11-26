@@ -7,7 +7,7 @@
     <title>HTML Tutorial</title>
     <link rel="stylesheet" href="../style.css">
     <!-- Prism.js Stylesheet for syntax highlighting -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
     <!-- toogle icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -80,7 +80,7 @@
                 <li>
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
@@ -111,7 +111,7 @@
                 <li>
                     <p><strong>Example:</strong> </p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript">alert(<span class="hljs-string">"Welcome to the site!"</span>);
 let <span class="hljs-built_in">name</span> = prompt(<span class="hljs-string">"What is your name?"</span>);
 console.<span class="hljs-built_in">log</span>(<span class="hljs-string">"Hello, "</span> + <span class="hljs-built_in">name</span>);
@@ -132,7 +132,7 @@ console.<span class="hljs-built_in">log</span>(<span class="hljs-string">"Hello,
                 <li>
                     <p><strong>Example:</strong> </p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript">let age = <span class="hljs-number">25</span>;
 const <span class="hljs-built_in">name</span> = <span class="hljs-string">"Ujjwal"</span>;
 console.<span class="hljs-built_in">log</span>(<span class="hljs-built_in">name</span> + <span class="hljs-string">" is "</span> + age + <span class="hljs-string">" years old."</span>);
@@ -153,7 +153,7 @@ console.<span class="hljs-built_in">log</span>(<span class="hljs-built_in">name<
                 <li>
                     <p><strong>Example:</strong> </p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript"><span class="hljs-built_in">let</span> <span class="hljs-built_in">text</span> = <span class="hljs-string">"Hello"</span>; <span class="hljs-comment">// string</span>
 <span class="hljs-built_in">let</span> number = <span class="hljs-number">42</span>;    <span class="hljs-comment">// number</span>
 <span class="hljs-built_in">let</span> isActive = <span class="hljs-literal">true</span>; <span class="hljs-comment">// boolean</span>
@@ -173,7 +173,7 @@ console.<span class="hljs-built_in">log</span>(typeof <span class="hljs-built_in
                 <li>
                     <p><strong>Example:</strong> </p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript"><span class="hljs-keyword">let</span> <span class="hljs-attr">userAge</span> = <span class="hljs-number">25</span>; // camelCase
 <span class="hljs-keyword">let</span> <span class="hljs-attr">isLoggedIn</span> = <span class="hljs-literal">true</span>;
 </code></pre>
@@ -193,7 +193,7 @@ console.<span class="hljs-built_in">log</span>(typeof <span class="hljs-built_in
                 <li>
                     <p><strong>Example:</strong> </p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript">let greeting = <span class="hljs-string">"Hello, "</span>;
 let <span class="hljs-built_in">name</span> = <span class="hljs-string">"Ujjwal"</span>;
 console.<span class="hljs-built_in">log</span>(greeting + <span class="hljs-built_in">name</span>); <span class="hljs-comment">// "Hello, Ujjwal"</span>
@@ -215,7 +215,7 @@ console.<span class="hljs-built_in">log</span>(<span class="hljs-built_in">name<
                 <li>
                     <p><strong>Example:</strong> </p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript">let result = (<span class="hljs-number">5</span> + <span class="hljs-number">3</span>) * <span class="hljs-number">2</span>;
 console.log(result); <span class="hljs-comment">// 16</span>
 </code></pre>
@@ -235,7 +235,7 @@ console.log(result); <span class="hljs-comment">// 16</span>
                 <li>
                     <p><strong>Example:</strong> </p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">greet</span>(<span class="hljs-params">name</span>) </span>{
   <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello, "</span> + name;
 }
@@ -256,7 +256,7 @@ console.log(result); <span class="hljs-comment">// 16</span>
                 <li>
                     <p><strong>Example:</strong> </p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript"><span class="hljs-keyword">let</span> randomNumber = <span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">10</span>; <span class="hljs-comment">// Between 0 and 10</span>
 <span class="hljs-built_in">console</span>.log(randomNumber);
 </code></pre>
@@ -274,7 +274,7 @@ console.log(result); <span class="hljs-comment">// 16</span>
                 <li>
                     <p><strong>Example:</strong> </p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript"><span class="hljs-keyword">let</span> age = <span class="hljs-number">20</span>;
 <span class="hljs-keyword">if</span> (age &gt;= <span class="hljs-number">18</span>) {
   console.<span class="hljs-built_in">log</span>(<span class="hljs-string">"You can vote."</span>);
@@ -298,7 +298,7 @@ console.log(result); <span class="hljs-comment">// 16</span>
                 <li>
                     <p><strong>Example:</strong> </p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript"><span class="hljs-keyword">let</span> <span class="hljs-attr">a</span> = <span class="hljs-number">5</span>;
 <span class="hljs-keyword">let</span> <span class="hljs-attr">b</span> = <span class="hljs-string">"5"</span>;
 console.log(<span class="hljs-attr">a</span> == b);  // <span class="hljs-literal">true</span> (loose equality)
@@ -321,7 +321,7 @@ console.log(a &gt; <span class="hljs-number">3</span>);   // <span class="hljs-l
                 <li>
                     <p><strong>Example:</strong> </p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript"><span class="hljs-keyword">let</span> <span class="hljs-attr">age</span> = <span class="hljs-number">25</span>;
 <span class="hljs-keyword">let</span> <span class="hljs-attr">isMember</span> = <span class="hljs-literal">true</span>;
 <span class="hljs-keyword">if</span> (age &gt; <span class="hljs-number">18</span> &amp;&amp; isMember) {
@@ -342,7 +342,7 @@ console.log(a &gt; <span class="hljs-number">3</span>);   // <span class="hljs-l
                 <li>
                     <p><strong>Example:</strong> </p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript"><span class="hljs-keyword">let</span> colors = [<span class="hljs-string">"red"</span>, <span class="hljs-string">"blue"</span>, <span class="hljs-string">"green"</span>];
 console.<span class="hljs-built_in">log</span>(colors[<span class="hljs-number">0</span>]); <span class="hljs-comment">// "red"</span>
 colors.<span class="hljs-keyword">push</span>(<span class="hljs-string">"yellow"</span>);  <span class="hljs-comment">// Add "yellow"</span>
@@ -361,7 +361,7 @@ console.<span class="hljs-built_in">log</span>(colors.length); <span class="hljs
                 <li>
                     <p id="example-for-loop-"><strong>Example (For Loop):</strong></p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript">let numbers = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
     for (let i = <span class="hljs-number">0</span>; i &lt; numbers.length; i++) {
         console.log(numbers[i]);
@@ -370,9 +370,9 @@ console.<span class="hljs-built_in">log</span>(colors.length); <span class="hljs
                     </div>
                 </li>
                 <li>
-                    <p id="example-for-loop-"><strong>Example (While Loop):</strong></p>
+                    <p id="example-while-loop-"><strong>Example (While Loop):</strong></p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript">let <span class="hljs-built_in">count</span> = <span class="hljs-number">0</span><span class="hljs-comment">;</span>
     while (<span class="hljs-built_in">count</span> &lt; <span class="hljs-number">5</span>) {
         console.log(<span class="hljs-built_in">count</span>)<span class="hljs-comment">;</span>
@@ -395,7 +395,7 @@ console.<span class="hljs-built_in">log</span>(colors.length); <span class="hljs
                 <li>
                     <p><strong>Example:</strong> </p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript"><span class="hljs-keyword">let</span> name = <span class="hljs-string">"Ujjwal"</span>;
 <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">typeof</span> name); <span class="hljs-comment">// "string"</span>
 <span class="hljs-keyword">let</span> age = <span class="hljs-number">25</span>;
@@ -416,7 +416,7 @@ console.<span class="hljs-built_in">log</span>(colors.length); <span class="hljs
                 <li>
                     <p><strong>Example:</strong> </p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript"><span class="hljs-keyword">let</span> fruits = [<span class="hljs-string">"apple"</span>, <span class="hljs-string">"banana"</span>, <span class="hljs-string">"cherry"</span>];
 fruits.forEach(<span class="hljs-function"><span class="hljs-params">fruit</span> =&gt;</span> {
   <span class="hljs-built_in">console</span>.log(fruit);
@@ -436,7 +436,7 @@ fruits.forEach(<span class="hljs-function"><span class="hljs-params">fruit</span
                 <li>
                     <p><strong>Example:</strong> </p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript"><span class="hljs-keyword">let</span> user = {
   <span class="hljs-attr">name</span>: <span class="hljs-string">"Ujjwal"</span>,
   <span class="hljs-attr">age</span>: <span class="hljs-number">25</span>,
@@ -461,7 +461,7 @@ user.greet();           <span class="hljs-comment">// "Hello Ujjwal"</span>
                 <li>
                     <p><strong>Example:</strong> </p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">User</span>(<span class="hljs-params">name, age</span>) </span>{
   <span class="hljs-keyword">this</span>.name = name;
   <span class="hljs-keyword">this</span>.age = age;
@@ -485,7 +485,7 @@ user.greet();           <span class="hljs-comment">// "Hello Ujjwal"</span>
                 <li>
                     <p><strong>Example:</strong> </p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript"><span class="hljs-keyword">let</span> numbers = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
 <span class="hljs-keyword">let</span> doubled = numbers.map(<span class="hljs-function"><span class="hljs-params">num</span> =&gt;</span> num * <span class="hljs-number">2</span>);
 <span class="hljs-built_in">console</span>.log(doubled); <span class="hljs-comment">// [2, 4, 6, 8]</span>
@@ -505,7 +505,7 @@ user.greet();           <span class="hljs-comment">// "Hello Ujjwal"</span>
                 <li>
                     <p><strong>Example:</strong> </p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
   <span class="hljs-keyword">constructor</span>(brand, model) {
       <span class="hljs-keyword">this</span>.brand = brand;
@@ -532,7 +532,7 @@ car.start(); <span class="hljs-comment">// "Toyota Corolla is starting."</span>
                 <li>
                     <p><strong>Example:</strong> </p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript"><span class="hljs-keyword">let</span> now = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
 console.<span class="hljs-built_in">log</span>(now.toDateString()); <span class="hljs-comment">// e.g., "Tue Nov 21 2024"</span>
 </code></pre>
@@ -552,7 +552,7 @@ console.<span class="hljs-built_in">log</span>(now.toDateString()); <span class=
                     <p><strong>Example:</strong></p>
 
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript">let <span class="hljs-built_in">day</span> = <span class="hljs-string">"Monday"</span>;
 <span class="hljs-keyword">switch</span> (<span class="hljs-built_in">day</span>) {
     <span class="hljs-keyword">case</span> <span class="hljs-string">"Monday"</span>:
@@ -579,7 +579,7 @@ console.<span class="hljs-built_in">log</span>(now.toDateString()); <span class=
                 <li>
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span> </span>{
     constructor(name) {
         <span class="hljs-built_in">this</span>._name = name;
@@ -610,7 +610,7 @@ console.log(person.name); <span class="hljs-comment">// "Amit"</span>
                 <li><strong>Use Case:</strong> Skip invalid data or exit loops based on conditions.</li>
                 <li><strong>Example:</strong>
                     <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode()">Copy</button>
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) {
     <span class="hljs-keyword">if</span> (i === <span class="hljs-number">3</span>) <span class="hljs-keyword">continue</span>;
     console.<span class="hljs-built_in">log</span>(i); <span class="hljs-comment">// 0, 1, 2, 4</span>
@@ -651,8 +651,8 @@ console.log(person.name); <span class="hljs-comment">// "Amit"</span>
                             <p><em>const</em>: For variables that don’t change.</p>
                             <p><em>let</em>: For variables that may change.</p>
                             <div class="code-container">
-                                <button class="copy-btn" onclick="copyCode()">Copy</button>
-                                    <pre><code class="language-javascript">// Avoid
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Avoid
 var name = "Ujjwal";
 
 // Use
@@ -662,12 +662,12 @@ score += 5;
 </code></pre>
                             </div>
                         </li>
-                         <li>
+                        <li>
                             <p>Enable Strict Mode:</p>
                             <p>Strict mode helps catch common mistakes like undeclared variables, improving code
                                 quality.</p>
                             <div class="code-container">
-                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                                 <pre><code class="language-javascript">'use strict';
 
 // Example
@@ -681,7 +681,7 @@ function myFunction() {
                             <p>Write Descriptive Variable and Function Names:</p>
                             <p>Use meaningful names to improve readability and make your code self-explanatory.</p>
                             <div class="code-container">
-                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                                 <pre><code class="language-javascript">// Avoid
 function x(a, b) {
     return a + b;
@@ -699,7 +699,7 @@ function calculateSum(num1, num2) {
                             <p>Add comments to explain why specific logic is implemented, especially for complex
                                 sections.</p>
                             <div class="code-container">
-                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                                 <pre><code class="language-javascript">// Calculate the total price with tax
 const totalPrice = price + (price * taxRate);
 </code></pre>
@@ -709,7 +709,7 @@ const totalPrice = price + (price * taxRate);
                             <p>Avoid Global Variables:</p>
                             <p>Minimize the use of global variables to avoid conflicts and unintended overwrites.</p>
                             <div class="code-container">
-                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                                 <pre><code class="language-javascript">// Avoid
 globalVariable = "This is bad";
 
@@ -724,7 +724,7 @@ function myFunction() {
                             <p>Keep Functions Small and Focused:</p>
                             <p>Break down larger tasks into smaller, reusable functions that do one thing well.</p>
                             <div class="code-container">
-                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                                 <pre><code class="language-javascript">// Avoid
 function handleEverything() {
     // Too many responsibilities
@@ -745,7 +745,7 @@ function displaySum(sum) {
                             <p>Use Template Literals for Strings:</p>
                             <p>Template literals make string concatenation cleaner and more readable.</p>
                             <div class="code-container">
-                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                                 <pre><code class="language-javascript">const name = "Ujjwal";
 const greeting = `Hello, ${name}! Welcome to JavaScript.`;
 console.log(greeting);
@@ -757,7 +757,7 @@ console.log(greeting);
                             <p>Providing default values for function parameters helps avoid errors when arguments are
                                 not provided.</p>
                             <div class="code-container">
-                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                                 <pre><code class="language-javascript">function greet(name = "Guest") {
     console.log(`Hello, ${name}!`);
 }
@@ -771,7 +771,7 @@ greet(); // Output: Hello, Guest!
                             <p>Refactoring deeply nested loops and conditions improves readability and reduces
                                 complexity.</p>
                             <div class="code-container">
-                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                                 <pre><code class="language-javascript">// Avoid
 if (condition1) {
     if (condition2) {
@@ -794,7 +794,7 @@ if (!condition1 || !condition2 || !condition3) return;
                             <p>Arrow functions provide a cleaner syntax and preserve the `this` context in JavaScript.
                             </p>
                             <div class="code-container">
-                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                                 <pre><code class="language-javascript">const numbers = [1, 2, 3];
 const squares = numbers.map(num => num * num);
 console.log(squares); // Output: [1, 4, 9]
@@ -806,7 +806,7 @@ console.log(squares); // Output: [1, 4, 9]
                             <p>Handle Errors Gracefully:</p>
                             <p>Use `try...catch` blocks to handle errors and prevent the program from crashing.</p>
                             <div class="code-container">
-                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                                 <pre><code class="language-javascript">try {
     const result = riskyOperation();
     console.log(result);
@@ -822,7 +822,7 @@ console.log(squares); // Output: [1, 4, 9]
                             <p>Breaking your code into smaller, reusable modules enhances maintainability and
                                 reusability.</p>
                             <div class="code-container">
-                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                                 <pre><code class="language-javascript">// mathUtils.js
 export function add(a, b) {
     return a + b;
@@ -840,7 +840,7 @@ console.log(add(5, 10)); // Output: 15
                             <p>Write unit tests to ensure your code behaves as expected, which helps catch errors early.
                             </p>
                             <div class="code-container">
-                                <button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                                 <pre><code class="language-javascript">function add(a, b) {
     return a + b;
 }
@@ -850,7 +850,7 @@ console.assert(add(2, 3) === 5, "Test failed");
 </code></pre>
                             </div>
                         </li>
-
+                    </ol>
             </ul>
 
 
@@ -867,6 +867,7 @@ console.assert(add(2, 3) === 5, "Test failed");
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Local JS -->
-    <script src="../script.js""></script>
-    </body>
-    </html>
+    <script src="../script.js"></script>
+</body>
+
+</html>
