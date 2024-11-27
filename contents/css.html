@@ -40,18 +40,17 @@
                 <li><a href="#3-selectors">Selectors</a></li>
                 <li><a href="#4-colors-and-backgrounds">Colors and Backgrounds</a></li>
                 <li><a href="#5-box-model">Box Model</a></li>
-                <li><a href="#6-flexbox">Flexbox</a></li>
-                <li><a href="#7-grid-layout">Grid Layout</a></li>
-                <li><a href="#8-typography">Typography</a></li>
-                <li><a href="#9-positioning">Positioning</a></li>
-                <li><a href="#10-media-queries">Media Queries</a></li>
-                <li><a href="#11-transitions-and-animations">Transitions and Animations</a></li>
-                <li><a href="#12-pseudo-classes-and-pseudo-elements">Pseudo-classes and Pseudo-elements</a></li>
-                <li><a href="#13-advanced-selectors">Advanced Selectors</a></li>
-                <li><a href="#14-custom-properties-css-variables">Custom Properties (CSS Variables)</a></li>
-                <li><a href="#15-css-frameworks">CSS Frameworks</a></li>
-                <li><a href="#16-responsive-design-principles">Responsive Design Principles</a></li>
-                <li><a href="#17-css-debugging-tips">CSS Debugging Tips</a></li>
+                <li><a href="#6-display">Display</a></li>
+                <li><a href="#7-positioning">Positioning</a></li>
+                <li><a href="#8-flexbox">Flexbox</a></li>
+                <li><a href="#9-grid-layout">Grid Layout</a></li>
+                <li><a href="#10-typography">Typography</a></li>
+                <li><a href="#11-media-queries">Media Queries</a></li>
+                <li><a href="#12-transitions-and-animations">Transitions and Animations</a></li>
+                <li><a href="#13-pseudo-classes-and-pseudo-elements">Pseudo-classes and Pseudo-elements</a></li>
+                <li><a href="#14-advanced-selectors">Advanced Selectors</a></li>
+                <li><a href="#15-custom-properties-css-variables">Custom Properties (CSS Variables)</a></li>
+                <li><a href="#16-css-debugging-tips">CSS Debugging Tips</a></li>
             </ol>
         </div>
         <!-- Step by step guide -->
@@ -132,24 +131,31 @@
                 </li>
                 <li>
                     <p><strong>Use Case:</strong> Styling all
-                    <p> elements or specific IDs/classes.</p>
+                        elements or specific IDs/classes.</p>
                 </li>
                 <li>
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
                         <button class="copy-btn" onclick="copyCode(event)">Copy</button>
-                        <pre><code class="language-css"><span class="hljs-comment">/* Class Selector */</span>
-<span class="hljs-selector-class">.box</span> {
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid black;
+                        <pre><code class="language-css">/* Tag Selector */
+div {
+    color: red;
 }
 
-<span class="hljs-comment">/* ID Selector */</span>
-<span class="hljs-selector-id">#unique-box</span> {
-  <span class="hljs-attribute">background-color</span>: yellow;
+/* Class Selector */
+.box {
+    border: 1px solid black;
+}
+
+/* ID Selector */
+#unique-box {
+    background-color: yellow;
 }
 </code></pre>
                     </div>
                 </li>
+                <li><p><strong>Playground:</strong> Explore CSS selectors dynamically with this hands-on <a href="https://ujjwalgarai.github.io/interactive-css-selector-playground/" 
+                    target="_blank" rel="noopener noreferrer">playground</a> 🔗.</p></li>
             </ul>
             <h3 id="4-colors-and-backgrounds">4. Colors and Backgrounds</h3>
             <ul>
@@ -176,6 +182,8 @@
 </code></pre>
                     </div>
                 </li>
+                <li><p><strong>Playground:</strong> Experiment with CSS colors and background properties in this interactive <a href="https://ujjwalgarai.github.io/interactive-css-properties-playground/" 
+                    target="_blank" rel="noopener noreferrer">playground</a> 🔗.</p></li>                
             </ul>
             <h3 id="5-box-model">5. Box Model</h3>
             <ul>
@@ -193,17 +201,81 @@
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
                         <button class="copy-btn" onclick="copyCode(event)">Copy</button>
-                        <pre><code class="language-css"><span class="hljs-selector-tag">div</span> {
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
-  <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">5px</span> solid red;
-  <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span>;
+                        <pre><code class="language-css">div {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid red;
+    margin: 10px;
 }
 </code></pre>
                     </div>
                 </li>
             </ul>
-            <h3 id="6-flexbox">6. Flexbox</h3>
+            <h3 id="6-display">6. Display</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> The `display` property in CSS controls the layout behavior of an
+                        element, determining how it is rendered on the page.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> The `display` property allows you to change an element's box model and
+                        positioning, which directly affects its visibility and positioning in the layout.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Making an element a block, inline, inline-block, or none for specific
+                        layout needs. For example, converting a <code>div</code> to an inline element or hiding it
+                        entirely.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                        <pre><code class="language-css"><span class="hljs-selector-tag">div</span> {
+  <span class="hljs-attribute">display</span>: <span class="hljs-string">block</span>;
+}
+
+<span class="hljs-selector-tag">span</span> {
+  <span class="hljs-attribute">display</span>: <span class="hljs-string">inline</span>;
+}
+
+<span class="hljs-selector-tag">p</span> {
+  <span class="hljs-attribute">display</span>: <span class="hljs-string">none</span>;
+}
+
+<span class="hljs-selector-tag">button</span> {
+  <span class="hljs-attribute">display</span>: <span class="hljs-string">inline-block</span>;
+}
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+
+            <h3 id="7-positioning">7. Positioning</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> CSS positioning specifies how elements are placed.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> Position elements dynamically.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Creating overlays, sticky headers.</p>
+                </li>
+                <li>
+                    <p><strong>Example:</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                        <pre><code class="language-css"><span class="hljs-selector-tag">div {
+    position: absolute; /*  static | relative | fixed | absolute | sticky */
+    top: 50px;
+    left: 100px;
+  }
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <h3 id="8-flexbox">8. Flexbox</h3>
             <ul>
                 <li>
                     <p><strong>Definition:</strong> A CSS layout model for flexible arrangements.</p>
@@ -218,16 +290,28 @@
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
                         <button class="copy-btn" onclick="copyCode(event)">Copy</button>
-                        <pre><code class="language-css"><span class="hljs-selector-class">.container</span> {
-  <span class="hljs-attribute">display</span>: flex;
-  <span class="hljs-attribute">justify-content</span>: center;
-  <span class="hljs-attribute">align-items</span>: center;
-}
+                        <pre><code class="language-css">.container {
+    display: flex;         /* or inline-flex */
+    flex-direction: row;   /* or row-reverse | column | column-reverse */ 
+    flex-wrap: nowrap;     /*or wrap | wrap-reverse */
+    justify-content: flex-start; /*  or flex-end | center | space-between | space-around | space-evenly | start | end */
+    align-items: stretch; /* or flex-start | flex-end | center | baseline | first baseline | last baseline | start | end */
+    gap: 10px;
+  }
+
+.item-1 {
+    order: 5; /* default is 0 */
+    flex-grow: 4; /* default 0 */
+    flex-shrink: 3; /* default 1 */
+    flex-basis: auto; /* default auto */
+  }
 </code></pre>
                     </div>
                 </li>
+                <li><p><strong>Playground:</strong> Master CSS Flexbox concepts with this interactive <a href="https://ujjwalgarai.github.io/interactive-flex-box-playground/" 
+                    target="_blank" rel="noopener noreferrer">playground</a> 🔗.</p></li>                
             </ul>
-            <h3 id="7-grid-layout">7. Grid Layout</h3>
+            <h3 id="9-grid-layout">9. Grid Layout</h3>
             <ul>
                 <li>
                     <p><strong>Definition:</strong> A CSS module for creating grid-based layouts.</p>
@@ -250,8 +334,10 @@
 </code></pre>
                     </div>
                 </li>
+                <li><p><strong>Playground:</strong> Explore CSS Grid Layouts with this interactive <a href="https://ujjwalgarai.github.io/interactive-grid-layout-playground/" 
+                    target="_blank" rel="noopener noreferrer">playground</a> 🔗.</p></li>                
             </ul>
-            <h3 id="8-typography">8. Typography</h3>
+            <h3 id="10-typography">10. Typography</h3>
             <ul>
                 <li>
                     <p><strong>Definition:</strong> Styling text content.</p>
@@ -274,32 +360,11 @@
 </code></pre>
                     </div>
                 </li>
+                <li><p><strong>Playground:</strong> Explore CSS typography properties in this interactive <a href="https://ujjwalgarai.github.io/interactive-css-properties-playground/" 
+                    target="_blank" rel="noopener noreferrer">playground</a> 🔗.</p></li>                
             </ul>
-            <h3 id="9-positioning">9. Positioning</h3>
-            <ul>
-                <li>
-                    <p><strong>Definition:</strong> CSS positioning specifies how elements are placed.</p>
-                </li>
-                <li>
-                    <p><strong>Purpose:</strong> Position elements dynamically.</p>
-                </li>
-                <li>
-                    <p><strong>Use Case:</strong> Creating overlays, sticky headers.</p>
-                </li>
-                <li>
-                    <p><strong>Example:</strong></p>
-                    <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
-                        <pre><code class="language-css"><span class="hljs-selector-tag">div</span> {
-  <span class="hljs-attribute">position</span>: absolute;
-  <span class="hljs-attribute">top</span>: <span class="hljs-number">50px</span>;
-  <span class="hljs-attribute">left</span>: <span class="hljs-number">100px</span>;
-}
-</code></pre>
-                    </div>
-                </li>
-            </ul>
-            <h3 id="10-media-queries">10. Media Queries</h3>
+
+            <h3 id="11-media-queries">11. Media Queries</h3>
             <ul>
                 <li>
                     <p><strong>Definition:</strong> CSS feature for responsive designs.</p>
@@ -323,7 +388,7 @@
                     </div>
                 </li>
             </ul>
-            <h3 id="11-transitions-and-animations">11. Transitions and Animations</h3>
+            <h3 id="12-transitions-and-animations">12. Transitions and Animations</h3>
             <ul>
                 <li>
                     <p><strong>Definition:</strong> Enhance interactivity with smooth effects.</p>
@@ -349,7 +414,7 @@
                     </div>
                 </li>
             </ul>
-            <h3 id="12-pseudo-classes-and-pseudo-elements">12. Pseudo-classes and Pseudo-elements</h3>
+            <h3 id="13-pseudo-classes-and-pseudo-elements">13. Pseudo-classes and Pseudo-elements</h3>
             <ul>
                 <li>
                     <p><strong>Definition:</strong> Select specific states or parts of elements.</p>
@@ -371,7 +436,7 @@
                     </div>
                 </li>
             </ul>
-            <h3 id="13-advanced-selectors">13. Advanced Selectors</h3>
+            <h3 id="14-advanced-selectors">14. Advanced Selectors</h3>
             <ul>
                 <li>
                     <p><strong>Definition:</strong> Complex selectors for specific styling.</p>
@@ -386,14 +451,42 @@
                     <p><strong>Example:</strong></p>
                     <div class="code-container">
                         <button class="copy-btn" onclick="copyCode(event)">Copy</button>
-                        <pre><code class="language-css"><span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span>:first-child {
-  <span class="hljs-attribute">color</span>: red;
+                        <pre><code class="language-css">/* Selects elements with the &#x22;type&#x22; attribute */
+[type] {
+    border: 1px solid black;
 }
+
+/* Selects input elements with type=&#x22;text&#x22; */
+input[type=&#x22;text&#x22;] {
+    background-color: yellow;
+}
+
+/* Descendant Selector (Space) */
+/* Selects all &#x3C;span&#x3E; elements inside a &#x3C;div&#x3E; */
+div span {
+    color: red;
+}
+
+/* Child Selector (&#x3E;) */
+/* Selects only direct &#x3C;p&#x3E; children of &#x3C;div&#x3E; */
+div &#x3E; p {
+    font-weight: bold;
+}
+
+/* Adjacent Sibling Selector (+) */
+/* Selects the first &#x3C;p&#x3E; immediately after a &#x3C;h1&#x3E; */
+h1 + p {
+    margin-top: 0;
+}
+
+/* General Sibling Selector (~) */
+/* Selects all &#x3C;p&#x3E; elements that are siblings of &#x3C;h1&#x3E; */ 
+h1 ~ p { color: green; }
 </code></pre>
                     </div>
                 </li>
             </ul>
-            <h3 id="14-custom-properties-css-variables-">14. Custom Properties (CSS Variables)</h3>
+            <h3 id="15-custom-properties-css-variables">15. Custom Properties (CSS Variables)</h3>
             <ul>
                 <li>
                     <p><strong>Definition:</strong> Variables for reusable values.</p>
@@ -419,52 +512,8 @@
                     </div>
                 </li>
             </ul>
-            <h3 id="15-css-frameworks">15. CSS Frameworks</h3>
-            <ul>
-                <li>
-                    <p><strong>Definition:</strong> Predefined stylesheets for faster development.</p>
-                </li>
-                <li>
-                    <p><strong>Purpose:</strong> Save time and maintain consistency.</p>
-                </li>
-                <li>
-                    <p><strong>Use Case:</strong> Bootstrap for responsive layouts.</p>
-                </li>
-                <li>
-                    <p><strong>Example:</strong></p>
-                    <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
-                        <pre><code class="language-html">
-&lt;<span class="hljs-keyword">link</span> rel=<span class="hljs-string">"stylesheet"</span> href=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"</span>&gt;
-</code></pre>
-                    </div>
-                </li>
-            </ul>
-            <h3 id="16-responsive-design-principles">16. Responsive Design Principles</h3>
-            <ul>
-                <li>
-                    <p><strong>Definition:</strong> Design practices for various devices.</p>
-                </li>
-                <li>
-                    <p><strong>Purpose:</strong> Ensure usability on all screen sizes.</p>
-                </li>
-                <li>
-                    <p><strong>Use Case:</strong> Scalable navigation menus.</p>
-                </li>
-                <li>
-                    <p><strong>Example:</strong></p>
-                    <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
-                        <pre><code class="language-css">@<span class="hljs-keyword">media</span> (max-width: <span class="hljs-number">768px</span>) {
-  <span class="hljs-selector-tag">nav</span> {
-    <span class="hljs-attribute">display</span>: none;
-  }
-}
-</code></pre>
-                    </div>
-                </li>
-            </ul>
-            <h3 id="17-css-debugging-tips">17. CSS Debugging Tips</h3>
+
+            <h3 id="16-css-debugging-tips">16. CSS Debugging Tips</h3>
             <ul>
                 <li>
                     <p><strong>Definition:</strong> CSS debugging refers to the process of identifying and fixing issues
@@ -571,5 +620,6 @@ color: white;
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Local JS -->
     <script src="../script.js"></script>
-    </body>
-    </html>
+</body>
+
+</html>

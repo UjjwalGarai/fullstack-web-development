@@ -6,6 +6,11 @@ const bodyContent = document.body; // Select body-content element
 
 
 const links = document.querySelectorAll('li > a'); // Select all <a> tags inside the navbar
+const insideLinks = document.querySelectorAll('.step-by-step-guide a');
+// .step-by-step-guide a {
+//     color: rgb(250, 249, 253);
+// }
+
 
 // Add hover effect
 function lightModeHover(){
@@ -75,6 +80,9 @@ toggleIcon.addEventListener('click', () => {
             link.style.color = 'white';
         });
         // console.log('lightmode')
+        insideLinks.forEach(link => {
+            link.style.color = 'white';
+        });
     }
     isDark = !isDark; // Toggle state
 });

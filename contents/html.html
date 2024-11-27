@@ -35,9 +35,9 @@
                 <li id="table-of-contents">Table of Contents</li>
                 <li><a href="#1-introduction-to-html">Introduction to HTML</a></li>
                 <li><a href="#2-headings-and-paragraphs">Headings and Paragraphs</a></li>
-                <li><a href="#3-lists">Lists</a></li>
-                <li><a href="#4-links-and-navigation">Links and Navigation</a></li>
-                <li><a href="#5-images">Images</a></li>
+                <li><a href="#3-links-and-navigation">Links and Navigation</a></li>
+                <li><a href="#4-images">Images</a></li>
+                <li><a href="#5-lists">Lists</a></li>
                 <li><a href="#6-tables">Tables</a></li>
                 <li><a href="#7-forms">Forms</a></li>
                 <li><a href="#8-semantic-html">Semantic HTML</a></li>
@@ -119,7 +119,46 @@
                 </li>
             </ul>
             <hr>
-            <h3 id="3-lists">3. Lists</h3>
+            <h3 id="3-links-and-navigation">3. Links and Navigation</h3>
+            <ul>
+                <li><p><strong>Definition:</strong> Links (&lt;a&gt;) connect web pages, while navigation menus group
+                    links.</p></li>
+                <li><p><strong>Purpose:</strong> To navigate between different pages or external resources.</p></li>
+                <li><p><strong>Use Case:</strong> For creating menus or linking to other websites.</p></li>
+                <li><p><strong>Example:</strong>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                        <pre><code class="language-html">&lt;a href="https://example.com"&gt;VisitExample&lt;/a&gt;
+&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=f="/home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=f="/about"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            
+
+            
+            <h3 id="4-images">4. Images</h3>
+            <ul>
+                <li><p><strong>Definition:</strong> Images are added using the <code>&lt;img&gt;</code> tag.</p></li>
+                <li><p><strong>Purpose:</strong> To display visual content.</p></li>
+                <li><p><strong>Use Case:</strong> To enhance user engagement with images.</p></li>
+                <li><p><strong>Example:</strong>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                        <pre><code class="language-html">&lt;<span class="hljs-selector-tag">img</span> src="image.jpg"  alt="Descriptive Text" <span class="hljs-attribute">width</span>="300" height="200"&gt;
+</code></pre>
+                    </div>
+                </li>
+                <li><p><strong>Playground:</strong> Learn dynamic HTML basics through this interactive <a href="https://ujjwalgarai.github.io/html-basic-tutorial/" 
+                    target="_blank" rel="noopener noreferrer">guide</a> 🔗.</p></li>
+            </ul>
+            <hr>
+            <h3 id="5-lists">5. Lists</h3>
             <ul>
                 <li>
                     <p><strong>Definition:</strong> Lists organize content into ordered (<code>&lt;ol&gt;</code>),
@@ -150,52 +189,20 @@
 &lt;/dl&gt;</code></pre>
                     </div>
                 </li>
-            </ul>
-            <hr>
-
-            <h3 id="4-links-and-navigation">4. Links and Navigation</h3>
-            <ul>
-                <li><strong>Definition:</strong> Links (&lt;a&gt;) connect web pages, while navigation menus group
-                    links.</li>
-                <li><strong>Purpose:</strong> To navigate between different pages or external resources.</li>
-                <li><strong>Use Case:</strong> For creating menus or linking to other websites.</li>
-                <li><strong>Example:</strong>
-                    <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
-                        <pre><code class="language-html">&lt;a href="https://example.com"&gt;VisitExample&lt;/a&gt;
-&lt;nav&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a href=f="/home"&gt;Home&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=f="/about"&gt;About&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/nav&gt;</code></pre>
-                    </div>
-                </li>
-            </ul>
-            <hr>
-            <h3 id="5-images">5. Images</h3>
-            <ul>
-                <li><strong>Definition:</strong> Images are added using the <code>&lt;img&gt;</code> tag.</li>
-                <li><strong>Purpose:</strong> To display visual content.</li>
-                <li><strong>Use Case:</strong> To enhance user engagement with images.</li>
-                <li><strong>Example:</strong>
-                    <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
-                        <pre><code class="language-html">&lt;<span class="hljs-selector-tag">img</span> src="image.jpg"  alt="Descriptive Text" <span class="hljs-attribute">width</span>="300" height="200"&gt;
-</code></pre>
-                    </div>
-                </li>
+                <li><p><strong>Playground:</strong> Explore lists in HTML through this interactive <a href="https://ujjwalgarai.github.io/html-intermediate-tutorial/" 
+                    target="_blank" rel="noopener noreferrer">guide</a> 🔗.</p></li>
+                
             </ul>
             <hr>
             <h3 id="6-tables">6. Tables</h3>
             <ul>
-                <li><strong>Definition:</strong> Tables organize data into rows and columns using
+                <li><p><strong>Definition:</strong> Tables organize data into rows and columns using
                     <code>&lt;table&gt;</code>,
                     <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>, and <code>&lt;th&gt;</code>.
                 </li>
-                <li><strong>Purpose:</strong> To present tabular data in an understandable format.</li>
-                <li><strong>Use Case:</strong> For displaying schedules, data, or comparison charts.</li>
-                <li><strong>Example:</strong>
+                <li><p><strong>Purpose:</strong> To present tabular data in an understandable format.</p></li>
+                <li><p><strong>Use Case:</strong> For displaying schedules, data, or comparison charts.</p></li>
+                <li><p><strong>Example:</strong>
                     <div class="code-container">
                         <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html">&lt;table border="1"&gt;
@@ -211,15 +218,17 @@
 </code></pre>
                     </div>
                 </li>
+                <li><p><strong>Playground:</strong> Explore Tables in HTML through this interactive <a href="https://ujjwalgarai.github.io/html-intermediate-tutorial/" 
+                    target="_blank" rel="noopener noreferrer">guide</a> 🔗.</p></li>
             </ul>
             <hr>
             <h3 id="7-forms">7. Forms</h3>
             <ul>
-                <li><strong>Definition:</strong> Forms allow user input with <code>&lt;form&gt;</code> and various input
-                    elements.</li>
-                <li><strong>Purpose:</strong> To collect and process user data.</li>
-                <li><strong>Use Case:</strong> Login forms, sign-ups, feedback, and search functionality.</li>
-                <li><strong>Example:</strong>
+                <li><p><strong>Definition:</strong> Forms allow user input with <code>&lt;form&gt;</code> and various input
+                    elements.</p></li>
+                <li><p><strong>Purpose:</strong> To collect and process user data.</p></li>
+                <li><p><strong>Use Case:</strong> Login forms, sign-ups, feedback, and search functionality.</p></li>
+                <li><p><strong>Example:</strong>
                     <div class="code-container">
                         <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html">&lt;form action="/submit" method="post"&gt;
@@ -230,14 +239,16 @@
 </code></pre>
                     </div>
                 </li>
+                <li><p><strong>Playground:</strong> Dive into interactive HTML form layouts with this practical <a href="https://ujjwalgarai.github.io/interactive-form-layout-playground/" 
+                    target="_blank" rel="noopener noreferrer">guide</a> 🔗.</p></li>
             </ul>
             <hr>
             <h3 id="8-semantic-html">8. Semantic HTML</h3>
             <ul>
-                <li><strong>Definition:</strong> Semantic tags provide meaning and structure to the content.</li>
-                <li><strong>Purpose:</strong> Improves accessibility and SEO.</li>
-                <li><strong>Use Case:</strong> For better-organized web pages.</li>
-                <li><strong>Example:</strong>
+                <li><p><strong>Definition:</strong> Semantic tags provide meaning and structure to the content.</p></li>
+                <li><p><strong>Purpose:</strong> Improves accessibility and SEO.</p></li>
+                <li><p><strong>Use Case:</strong> For better-organized web pages.</p></li>
+                <li><p><strong>Example:</strong>
                     <div class="code-container">
                         <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html">&lt;header&gt;
@@ -257,11 +268,11 @@
             <hr>
             <h3 id="9-media">9. Media</h3>
             <ul>
-                <li><strong>Definition:</strong> Media tags (&lt;video&gt;, &lt;audio&gt;) embed multimedia content.
+                <li><p><strong>Definition:</strong> Media tags (&lt;video&gt;, &lt;audio&gt;) embed multimedia content.
                 </li>
-                <li><strong>Purpose:</strong> To play video or audio directly on a webpage.</li>
-                <li><strong>Use Case:</strong> Adding tutorials, podcasts, or entertainment content.</li>
-                <li><strong>Example:</strong>
+                <li><p><strong>Purpose:</strong> To play video or audio directly on a webpage.</p></li>
+                <li><p><strong>Use Case:</strong> Adding tutorials, podcasts, or entertainment content.</p></li>
+                <li><p><strong>Example:</strong>
                     <div class="code-container">
                         <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html">&lt;video controls&gt;
@@ -278,10 +289,10 @@
             <hr>
             <h3 id="10-attributes">10. Attributes</h3>
             <ul>
-                <li><strong>Definition:</strong> Attributes provide additional information about HTML elements.</li>
-                <li><strong>Purpose:</strong> Enhance functionality or styling.</li>
-                <li><strong>Use Case:</strong> Setting IDs, classes, or styles.</li>
-                <li><strong>Example:</strong>
+                <li><p><strong>Definition:</strong> Attributes provide additional information about HTML elements.</p></li>
+                <li><p><strong>Purpose:</strong> Enhance functionality or styling.</p></li>
+                <li><p><strong>Use Case:</strong> Setting IDs, classes, or styles.</p></li>
+                <li><p><strong>Example:</strong>
                     <div class="code-container">
                         <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html"> &lt;p id="intro" class="highlight" style="color: red;"&gt;Hello World!&lt;/p&gt;
@@ -293,10 +304,10 @@
             <hr>
             <h3 id="11-html-entities">11. HTML Entities</h3>
             <ul>
-                <li><strong>Definition:</strong> Special characters represented by codes (e.g., &lt;, &amp;).</li>
-                <li><strong>Purpose:</strong> To display reserved or special characters.</li>
-                <li><strong>Use Case:</strong> Writing symbols or reserved characters.</li>
-                <li><strong>Example:</strong>
+                <li><p><strong>Definition:</strong> Special characters represented by codes (e.g., &lt;, &amp;).</p></li>
+                <li><p><strong>Purpose:</strong> To display reserved or special characters.</p></li>
+                <li><p><strong>Use Case:</strong> Writing symbols or reserved characters.</p></li>
+                <li><p><strong>Example:</strong>
                     <div class="code-container">
                         <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html">&lt;p&gt;5&amp;lt; 10 &amp;amp; 10 &amp;gt; 1&lt;/p&gt;
@@ -307,10 +318,10 @@
             <hr>
             <h3 id="12-forms-and-validation">12. Forms and Validation</h3>
             <ul>
-                <li><strong>Definition:</strong> Validation attributes ensure proper input from users.</li>
-                <li><strong>Purpose:</strong> To improve user input accuracy.</li>
-                <li><strong>Use Case:</strong> Creating required or pattern-matching fields.</li>
-                <li><strong>Example:</strong>
+                <li><p><strong>Definition:</strong> Validation attributes ensure proper input from users.</p></li>
+                <li><p><strong>Purpose:</strong> To improve user input accuracy.</p></li>
+                <li><p><strong>Use Case:</strong> Creating required or pattern-matching fields.</p></li>
+                <li><p><strong>Example:</strong>
                     <div class="code-container">
                         <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html">&lt;form&gt;
@@ -323,26 +334,33 @@
             <hr>
             <h3 id="13-iframe">13. Iframe</h3>
             <ul>
-                <li><strong>Definition:</strong> The <code>&lt;iframe&gt;</code> tag embeds external content.</li>
-                <li><strong>Purpose:</strong> To integrate content like maps or other sites.</li>
-                <li><strong>Use Case:</strong> Embedding YouTube videos, Google Maps, or other content.</li>
-                <li><strong>Example:</strong>
+                <li><p><strong>Definition:</strong> The <code>&lt;iframe&gt;</code> tag embeds external content.</p></li>
+                <li><p><strong>Purpose:</strong> To integrate content like maps or other sites.</p></li>
+                <li><p><strong>Use Case:</strong> Embedding YouTube videos, Google Maps, or other content.</p></li>
+                <li><p><strong>Example:</strong>
                     <div class="code-container">
                         <button class="copy-btn" onclick="copyCode(event)">Copy</button>
-                        <pre><code class="language-html">&lt;<span class="hljs-selector-tag">iframe</span> src="https://example.com" <span class="hljs-attribute">width</span>="600" height="400"&gt;&lt;/iframe&gt;
-</code></pre>
+                        <pre><code class="language-html">&lt;iframe 
+    src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15678972.023175908!2d78.9628801!3d20.593684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4f8fa1e8c8dfb%3A0x9d37a6808f4840e2!2sIndia!5e0!3m2!1sen!2sin!4v1698233400567!5m2!1sen!2sin&quot; 
+    width=&quot;600&quot; 
+    height=&quot;450&quot; 
+    style=&quot;border:0;&quot; 
+    allowfullscreen=&quot;&quot; 
+    loading=&quot;lazy&quot; 
+    referrerpolicy=&quot;no-referrer-when-downgrade&quot;&gt;
+&lt;/iframe&gt;</code></pre>
                     </div>
                 </li>
             </ul>
             <hr>
             <h3 id="14-html5-features">14. HTML5 Features</h3>
             <ul>
-                <li><strong>Definition:</strong> HTML5 introduces new tags and APIs.</li>
-                <li><strong>Purpose:</strong> Enhance functionality and interactivity.</li>
-                <li><strong>Use Case:</strong> Using &lt;canvas&gt; for graphics, &lt;progress&gt;for progress bars, and
+                <li><p><strong>Definition:</strong> HTML5 introduces new tags and APIs.</p></li>
+                <li><p><strong>Purpose:</strong> Enhance functionality and interactivity.</p></li>
+                <li><p><strong>Use Case:</strong> Using &lt;canvas&gt; for graphics, &lt;progress&gt;for progress bars, and
                     more.
                 </li>
-                <li><strong>Example:</strong>
+                <li><p><strong>Example:</strong>
                     <div class="code-container">
                         <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html">&lt;progress value>="70" max="100"&gt;&lt;/progress&gt;
@@ -353,16 +371,16 @@
             <hr>
             <h3 id="15-html-document-metadata">15. HTML Document Metadata</h3>
             <ul>
-                <li><strong>Definition:</strong> HTML metadata is information about a webpage that isn’t displayed
+                <li><p><strong>Definition:</strong> HTML metadata is information about a webpage that isn’t displayed
                     directly on
-                    the page, defined in the <code>&lt;head&gt;</code> section.</li>
-                <li><strong>Purpose:</strong> It provides information such as the title, description, keywords, and
+                    the page, defined in the <code>&lt;head&gt;</code> section.</p></li>
+                <li><p><strong>Purpose:</strong> It provides information such as the title, description, keywords, and
                     author for
-                    SEO, accessibility, and proper browser rendering.</li>
-                <li><strong>Use Case:</strong> Adding a title for the page, specifying character encoding, or
+                    SEO, accessibility, and proper browser rendering.</p></li>
+                <li><p><strong>Use Case:</strong> Adding a title for the page, specifying character encoding, or
                     optimizing for
-                    search engines.</li>
-                <li><strong>Example:</strong>
+                    search engines.</p></li>
+                <li><p><strong>Example:</strong>
                     <div class="code-container">
                         <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;
@@ -385,13 +403,13 @@
             <hr>
             <h3 id="16-introduction-to-css-integration">16. Introduction to CSS Integration</h3>
             <ul>
-                <li><strong>Definition:</strong> CSS (Cascading Style Sheets) is used to style and layout web pages.
+                <li><p><strong>Definition:</strong> CSS (Cascading Style Sheets) is used to style and layout web pages.
                 </li>
-                <li><strong>Purpose:</strong> Separating content (HTML) and design (CSS) to create visually
+                <li><p><strong>Purpose:</strong> Separating content (HTML) and design (CSS) to create visually
                     appealing and
-                    consistent web pages.</li>
-                <li><strong>Use Case:</strong> Adding custom styles to headings, paragraphs, links, and more.</li>
-                <li><strong>Example:</strong>
+                    consistent web pages.</p></li>
+                <li><p><strong>Use Case:</strong> Adding custom styles to headings, paragraphs, links, and more.</p></li>
+                <li><p><strong>Example:</strong>
                     <div class="code-container">
                         <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html">&lt;!DOCTYPE html&gt;
@@ -421,14 +439,14 @@
             <hr>
             <h3 id="17-introduction-to-javascript-integration">17. Introduction to JavaScript Integration</h3>
             <ul>
-                <li><strong>Definition:</strong> JavaScript is a scripting language that adds interactivity to web
-                    pages.</li>
-                <li><strong>Purpose:</strong> To create dynamic and interactive features like animations, form
+                <li><p><strong>Definition:</strong> JavaScript is a scripting language that adds interactivity to web
+                    pages.</p></li>
+                <li><p><strong>Purpose:</strong> To create dynamic and interactive features like animations, form
                     validation, and
-                    event handling.</li>
-                <li><strong>Use Case:</strong> Integrating JavaScript to create responsive buttons or process user
-                    inputs.</li>
-                <li><strong>Example:</strong>
+                    event handling.</p></li>
+                <li><p><strong>Use Case:</strong> Integrating JavaScript to create responsive buttons or process user
+                    inputs.</p></li>
+                <li><p><strong>Example:</strong>
                     <div class="code-container">
                         <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;
@@ -448,12 +466,12 @@
             <hr>
             <h3 id="18-best-practices">18. Best Practices</h3>
             <ul>
-                <li><strong>Definition:</strong> HTML best practices are guidelines to ensure code quality,
+                <li><p><strong>Definition:</strong> HTML best practices are guidelines to ensure code quality,
                     readability, and
-                    maintainability.</li>
-                <li><strong>Purpose:</strong> To create clean, accessible, and efficient HTML code.</li>
-                <li><strong>Use Case:</strong> Following standards for better browser compatibility, SEO, and team
-                    collaboration.</li>
+                    maintainability.</p></li>
+                <li><p><strong>Purpose:</strong> To create clean, accessible, and efficient HTML code.</p></li>
+                <li><p><strong>Use Case:</strong> Following standards for better browser compatibility, SEO, and team
+                    collaboration.</p></li>
             </ul>
             <h4 id="best-practices-">Best Practices:</h4>
             <ul>
@@ -471,7 +489,7 @@
                 <li>Responsive Design: Use the <code>&lt;meta name=&quot;viewport&quot;&gt;</code> tag for mobile
                     compatibility.
                 </li>
-                <li><strong>Example:</strong>
+                <li><p><strong>Example:</strong>
                     <div class="code-container">
                         <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;
