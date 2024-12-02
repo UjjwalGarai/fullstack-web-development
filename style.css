@@ -114,17 +114,21 @@ html {
 }
 
 /* Subtopics (initially hidden) */
-.table-of-contents > ol > li > ol {
+/* .table-of-contents > ol > li > ol {
     display: none;
-    padding: 0;
-    text-align: center;
+    padding-left: 20px;
+    position: relative;
+    width: max-content;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin: 0;
     list-style: none;
-}
+} */
 
 /* Display subtopics on hover over the main topic */
-.table-of-contents > ol > li:hover > ol {
-    display: block; /* Show the subtopics when hovering */
-}
+/* .table-of-contents > ol > li:hover > ol {
+    display: block; 
+} */
 
 /* Ensures the subtopics appear just below the main topic, not outside */
 .table-of-contents > ol > li {

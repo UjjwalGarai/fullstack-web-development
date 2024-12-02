@@ -35,99 +35,805 @@
         <div class="table-of-contents">
             <ol>
                 <li id="table-of-contents">Table of Contents</li>
-                <li><a href="#1-intro">Intro to DOM</a></li>
-                <li><a href="#2-selecting">Selecting Elements</a>
-                    <ol>
-                        <li><a href="#2-1-by-id">By ID</a></li>
-                        <li><a href="#2-2-by-class">By Class</a></li>
-                        <li><a href="#2-3-by-tag">By Tag</a></li>
-                        <li><a href="#2-4-query">Query Selector</a></li>
-                    </ol>
-                </li>
-                <li><a href="#3-modifying">Modifying Elements</a>
-                    <ol>
-                        <li><a href="#3-1-text">Text Content</a></li>
-                        <li><a href="#3-2-html">HTML Content</a></li>
-                        <li><a href="#3-3-attrs">Attributes</a></li>
-                        <li><a href="#3-4-styles">Styles</a></li>
-                        <li><a href="#3-5-classes">Classes</a></li>
-                    </ol>
-                </li>
-                <li><a href="#4-creating">Creating Elements</a>
-                    <ol>
-                        <li><a href="#4-1-create">Create Element</a></li>
-                        <li><a href="#4-2-append">Append/Prepend</a></li>
-                        <li><a href="#4-3-remove">Remove Elements</a></li>
-                        <li><a href="#4-4-clone">Clone Element</a></li>
-                    </ol>
-                </li>
-                <li><a href="#5-events">Handling Events</a>
-                    <ol>
-                        <li><a href="#5-1-add-listener">Add Event Listener</a></li>
-                        <li><a href="#5-2-delegation">Event Delegation</a></li>
-                        <li><a href="#5-3-common">Common Events</a></li>
-                        <li><a href="#5-4-remove-listener">Remove Listener</a></li>
-                    </ol>
-                </li>
-                <li><a href="#6-forms">Form Manipulation</a>
-                    <ol>
-                        <li><a href="#6-1-access">Access Form Elements</a></li>
-                        <li><a href="#6-2-values">Handle Values</a></li>
-                        <li><a href="#6-3-validation">Form Validation</a></li>
-                        <li><a href="#6-4-submit">Submit Forms</a></li>
-                    </ol>
-                </li>
-                <li><a href="#7-traversing">Traversing DOM</a>
-                    <ol>
-                        <li><a href="#7-1-navigate">Navigate Nodes</a></li>
-                        <li><a href="#7-2-node-properties">Node Properties</a></li>
-                    </ol>
-                </li>
-                <li><a href="#8-loops">DOM Loops</a>
-                    <ol>
-                        <li><a href="#8-1-loop">Loop Through Elements</a></li>
-                        <li><a href="#8-2-multiple">Modify Multiple Elements</a></li>
-                    </ol>
-                </li>
-                <li><a href="#9-animations">Animating DOM</a>
-                    <ol>
-                        <li><a href="#9-1-time">Animate Over Time</a></li>
-                        <li><a href="#9-2-scroll">Smooth Scrolling</a></li>
-                    </ol>
-                </li>
-                <li><a href="#10-dom-tree">Working with DOM Tree</a>
-                    <ol>
-                        <li><a href="#10-1-nodetypes">Node Types</a></li>
-                        <li><a href="#10-2-tree-manip">Manipulate Tree</a></li>
-                    </ol>
-                </li>
-                <li><a href="#11-performance">Performance Optimization</a>
-                    <ol>
-                        <li><a href="#11-1-reflows">Minimize Reflows</a></li>
-                        <li><a href="#11-2-batch">Batch Manipulations</a></li>
-                        <li><a href="#11-3-fragment">Use DocumentFragment</a></li>
-                    </ol>
-                </li>
-                <li><a href="#12-examples">Practical Examples</a>
-                    <ol>
-                        <li><a href="#12-1-validation">Form Validation</a></li>
-                        <li><a href="#12-2-gallery">Image Gallery</a></li>
-                        <li><a href="#12-3-todolist">To-Do List</a></li>
-                        <li><a href="#12-4-modal">Modal Popup</a></li>
-                    </ol>
-                </li>
-        
+                <li><a href="#1-introduction-to-dom">Intro to DOM</a></li>
+                <li><a href="#2-selecting-elements">Selecting Elements</a></li>
+                <li><a href="#3-modifying-elements">Modifying Elements</a></li>
+                <li><a href="#4-creating-elements">Creating Elements</a></li>
+                <li><a href="#5-handling-events">Handling Events</a></li>
+                <li><a href="#6-form-manipulation">Form Manipulation</a></li>
+                <li><a href="#7-traversing-dom">Traversing DOM</a></li>
+                <li><a href="#8-dom-loops">DOM Loops</a></li>
+                <li><a href="#9-animating-dom">Animating DOM</a></li>
+                <li><a href="#10-working-with-dom-tree">Working with DOM Tree</a></li>
+                <li><a href="#11-performance-optimization">Performance Optimization</a></li>
+                <li><a href="#12-best-practices">Best Practices</a></li>
+
             </ol>
-        
-        
+
+
         </div>
         <!-- Step by step guide -->
         <div class="step-by-step-guide">
-            Comming Soon...
+            <h1 id="comprehensive-dom-tutorial">Comprehensive DOM Tutorial</h1>
+            <p>Welcome to the <strong>Comprehensive DOM Tutorial</strong>! This detailed guide is designed for
+                developers aiming to master DOM (Document Object Model) manipulation. From understanding basic concepts
+                to implementing advanced techniques, each topic is structured with a <strong>Purpose</strong>,
+                <strong>Definition</strong>, <strong>Use Case</strong>, and <strong>Examples</strong>. This ensures you
+                can effectively interact with and manipulate the DOM for dynamic and responsive web applications.
+            </p>
+            <hr>
+
+            <h3 id="1-introduction-to-dom">1. Introduction to DOM</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> The Document Object Model (DOM) is a programming interface for web
+                        documents that represents the structure of the page, allowing developers to manipulate HTML and
+                        CSS dynamically.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> Provides a way to programmatically access and update content,
+                        structure, and style of a webpage.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Changing webpage content, styles, or responding to user actions in
+                        real-time.</p>
+                </li>
+                <li>
+                    <p><strong>Examples:</strong></p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                        <pre><code class="language-javascript">// Accessing the DOM
+console.log(document.title); // Outputs the page title
+document.title = "New Title"; // Changes the title of the page
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="2-selecting-elements">2. Selecting Elements</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> Selecting DOM elements allows you to target specific parts of the
+                        HTML document for manipulation.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> To apply actions like changing text, styles, or attributes to specific
+                        elements.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Adding event listeners, modifying content, or styling elements
+                        dynamically.</p>
+                </li>
+                <li>
+                    <p><strong>Examples:</strong></p>
+                    <ol>
+                        <li>
+                            <p><strong>By ID:</strong> Selects an element using its unique ID.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Select an element by ID
+let element = document.getElementById('example');
+console.log(element); // Logs the element with ID 'example'
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>By Class:</strong> Selects elements using their class name.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Select elements by class
+let elements = document.getElementsByClassName('example-class');
+console.log(elements); // Logs a collection of elements with the class 'example-class'
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>By Tag:</strong> Selects elements using their tag name.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Select elements by tag name
+let paragraphs = document.getElementsByTagName('p');
+console.log(paragraphs); // Logs all 'p' elements on the page
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>Query Selector:</strong> Selects elements using CSS selectors.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Select the first matching element
+let element = document.querySelector('.example-class');
+// Select all matching elements
+let elements = document.querySelectorAll('div.example-class');
+console.log(element, elements);
+</code></pre>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="3-modifying-elements">3. Modifying Elements</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> The process of changing or updating the attributes, content, or
+                        style of DOM elements.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> Dynamically update the UI to reflect user interactions or data changes.
+                    </p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Change text, alter styles, or add new attributes to existing elements.
+                    </p>
+                </li>
+                <li>
+                    <p><strong>Examples:</strong></p>
+                    <ol>
+                        <li>
+                            <p><strong>Text Content:</strong> Modifies the text inside an element.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Modify text content
+let element = document.getElementById('example');
+element.textContent = "Updated Text";
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>HTML Content:</strong> Modifies the inner HTML of an element.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Modify HTML content
+let element = document.getElementById('example');
+element.innerHTML = "<strong>Bold Text</strong>";
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>Attributes:</strong> Adds or changes attributes on an element.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Modify attributes
+let element = document.getElementById('example');
+element.setAttribute('data-id', '12345');
+console.log(element.getAttribute('data-id')); // Logs '12345'
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>Styles:</strong> Updates the inline style of an element.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Modify styles
+let element = document.getElementById('example');
+element.style.color = "red";
+element.style.backgroundColor = "yellow";
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>Classes:</strong> Adds, removes, or toggles classes on an element.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Modify classes
+let element = document.getElementById('example');
+element.classList.add('new-class');
+element.classList.remove('old-class');
+element.classList.toggle('active-class');
+</code></pre>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="4-creating-elements">4. Creating Elements</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> The process of generating new elements and adding them to the DOM
+                        dynamically.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> Build new content dynamically without modifying the HTML source
+                        directly.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Add a new list item to a menu or dynamically insert a new card into a
+                        grid layout.</p>
+                </li>
+                <li>
+                    <p><strong>Examples:</strong></p>
+                    <ol>
+                        <li>
+                            <p><strong>Create Element:</strong> Generates a new element.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Create a new element
+let newElement = document.createElement('div');
+newElement.textContent = "I'm a new element!";
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>Append/Prepend:</strong> Adds elements to the DOM.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Append and prepend
+let parent = document.getElementById('container');
+let newElement = document.createElement('div');
+newElement.textContent = "Appended Element";
+parent.appendChild(newElement); // Adds as the last child
+
+let prependedElement = document.createElement('div');
+prependedElement.textContent = "Prepended Element";
+parent.prepend(prependedElement); // Adds as the first child
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>Remove Elements:</strong> Deletes elements from the DOM.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Remove an element
+let element = document.getElementById('example');
+element.remove();
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>Clone Element:</strong> Creates a copy of an element.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Clone an element
+let element = document.getElementById('example');
+let clone = element.cloneNode(true); // Deep clone
+document.body.appendChild(clone); // Add clone to the body
+</code></pre>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="5-handling-events">5. Handling Events</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> Handling events involves detecting and responding to user
+                        interactions such as clicks, keypresses, or form submissions.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> To create interactive and responsive web applications.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Validate a form, display tooltips, or create dropdown menus based on
+                        user actions.</p>
+                </li>
+                <li>
+                    <p><strong>Examples:</strong></p>
+                    <ol>
+                        <li>
+                            <p><strong>Add Event Listener:</strong> Attaches an event handler to an element.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Add an event listener
+let button = document.getElementById('myButton');
+button.addEventListener('click', () => {
+    alert('Button clicked!');
+});
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>Event Delegation:</strong> Attaches an event handler to a parent element to
+                                manage child elements.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Event delegation
+let parent = document.getElementById('parentDiv');
+parent.addEventListener('click', (event) => {
+    if (event.target.tagName === 'BUTTON') {
+        alert('Button inside parent clicked!');
+    }
+});
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>Common Events:</strong> Examples include 'click', 'mouseover', and 'keyup'.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Common events
+let inputField = document.getElementById('inputField');
+inputField.addEventListener('keyup', (event) => {
+    console.log(`Key pressed: ${event.key}`);
+});
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>Remove Listener:</strong> Detaches an event handler.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Remove event listener
+let button = document.getElementById('myButton');
+function handleClick() {
+    alert('Button clicked!');
+}
+button.addEventListener('click', handleClick);
+button.removeEventListener('click', handleClick);
+</code></pre>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="6-form-manipulation">6. Form Manipulation</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> Form manipulation involves accessing and modifying forms, their
+                        elements, and their values programmatically.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> To enhance user experience by dynamically handling forms.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Validate user inputs, submit forms programmatically, or dynamically
+                        populate dropdown menus.</p>
+                </li>
+                <li>
+                    <p><strong>Examples:</strong></p>
+                    <ol>
+                        <li>
+                            <p><strong>Access Form Elements:</strong> Access elements within a form.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Access form elements
+let form = document.getElementById('myForm');
+let input = form.elements['username'];
+console.log(input.value);
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>Handle Values:</strong> Get or set form field values.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Handle values
+let input = document.getElementById('username');
+input.value = "JohnDoe"; // Set value
+console.log(input.value); // Get value
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>Form Validation:</strong> Validate inputs before submission.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Validate form
+let form = document.getElementById('myForm');
+form.addEventListener('submit', (event) => {
+    let username = form.elements['username'].value;
+    if (username.trim() === '') {
+        event.preventDefault(); // Stop form submission
+        alert('Username is required!');
+    }
+});
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>Submit Forms:</strong> Trigger form submission programmatically.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Submit form
+let form = document.getElementById('myForm');
+form.submit();
+</code></pre>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="7-traversing-dom">7. Traversing DOM</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> Traversing the DOM involves navigating through parent, child, and
+                        sibling nodes in the document tree.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> To locate and manipulate specific elements in relation to others.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Navigate to adjacent elements or locate parent elements for
+                        hierarchical operations.</p>
+                </li>
+                <li>
+                    <p><strong>Examples:</strong></p>
+                    <ol>
+                        <li>
+                            <p><strong>Navigate Nodes:</strong> Navigate through parent, children, and siblings.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Navigate nodes
+let element = document.getElementById('childNode');
+console.log(element.parentNode); // Parent node
+console.log(element.firstChild); // First child node
+console.log(element.nextSibling); // Next sibling node
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>Node Properties:</strong> Access properties of a node like `nodeName` or
+                                `nodeType`.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Node properties
+let element = document.getElementById('childNode');
+console.log(element.nodeName); // Logs the name of the node (e.g., DIV)
+console.log(element.nodeType); // Logs the type of node (1 for element nodes)
+</code></pre>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="8-dom-loops">8. DOM Loops</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> DOM loops allow iterating through multiple elements to perform
+                        operations on each of them.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> Apply consistent changes or actions to multiple DOM elements.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Add styles to all list items or attach event listeners to multiple
+                        buttons.</p>
+                </li>
+                <li>
+                    <p><strong>Examples:</strong></p>
+                    <ol>
+                        <li>
+                            <p><strong>Loop Through Elements:</strong> Use loops to iterate over selected DOM elements.
+                            </p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Loop through elements
+let items = document.querySelectorAll('.list-item');
+items.forEach(item => {
+    console.log(item.textContent); // Logs each item's text content
+});
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>Modify Multiple Elements:</strong> Change styles or attributes for multiple
+                                elements.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Modify multiple elements
+let buttons = document.querySelectorAll('.btn');
+buttons.forEach(button => {
+    button.style.backgroundColor = 'blue';
+    button.style.color = 'white';
+});
+</code></pre>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="9-animating-dom">9. Animating DOM</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> Animating DOM involves creating smooth transitions or movements of
+                        elements on the page.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> Enhance user engagement through visual effects.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Create a dropdown menu, carousel, or smooth scrolling effects.</p>
+                </li>
+                <li>
+                    <p><strong>Examples:</strong></p>
+                    <ol>
+                        <li>
+                            <p><strong>Animate Over Time:</strong> Use `setInterval` or `requestAnimationFrame` for
+                                smooth animations.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Animate over time
+let box = document.getElementById('box');
+let position = 0;
+
+function move() {
+    position += 5;
+    box.style.left = position + 'px';
+    if (position &lt; 200) {
+        requestAnimationFrame(move);
+    }
+}
+move();
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>Smooth Scrolling:</strong> Implement smooth scrolling for better navigation
+                                experience.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Smooth scrolling
+let link = document.getElementById('scrollLink');
+link.addEventListener('click', (event) => {
+    event.preventDefault();
+    document.querySelector('#targetSection').scrollIntoView({ behavior: 'smooth' });
+});
+</code></pre>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="10-working-with-dom-tree">10. Working with DOM Tree</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> Working with the DOM tree involves navigating and manipulating nodes
+                        in the document's hierarchical structure.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> To understand and manipulate the relationships between nodes
+                        effectively.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Add, remove, or modify nodes dynamically based on their relationships.
+                    </p>
+                </li>
+                <li>
+                    <p><strong>Examples:</strong></p>
+                    <ol>
+                        <li>
+                            <p><strong>Node Types:</strong> Identify and differentiate between element, text, and
+                                comment nodes.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Node types
+let node = document.getElementById('sampleNode');
+console.log(node.nodeType); // Logs 1 for element nodes
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>Manipulate Tree:</strong> Add or remove nodes dynamically.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Manipulate DOM tree
+let parent = document.getElementById('parentNode');
+let newChild = document.createElement('div');
+newChild.textContent = 'New Child Node';
+parent.appendChild(newChild);
+</code></pre>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="11-performance-optimization">11. Performance Optimization</h3>
+            <ul>
+                <li>
+                    <p><strong>Definition:</strong> Performance optimization involves techniques to improve the speed
+                        and efficiency of DOM operations.</p>
+                </li>
+                <li>
+                    <p><strong>Purpose:</strong> To ensure smooth and fast user experience.</p>
+                </li>
+                <li>
+                    <p><strong>Use Case:</strong> Optimize animations, reduce reflows, and handle large datasets
+                        efficiently.</p>
+                </li>
+                <li>
+                    <p><strong>Examples:</strong></p>
+                    <ol>
+                        <li>
+                            <p><strong>Minimize Reflows:</strong> Reduce layout recalculations.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Minimize reflows
+let element = document.getElementById('myElement');
+element.style.width = '100px';
+element.style.height = '50px';
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>Batch Manipulations:</strong> Group changes to avoid multiple reflows.</p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Batch manipulations
+let element = document.getElementById('myElement');
+element.style.cssText = 'width: 100px; height: 50px;';
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p><strong>Use DocumentFragment:</strong> Use a lightweight container for batch DOM updates.
+                            </p>
+                            <div class="code-container">
+                                <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                                <pre><code class="language-javascript">// Use DocumentFragment
+let fragment = document.createDocumentFragment();
+for (let i = 0; i &lt; 5; i++) {
+    let newDiv = document.createElement('div');
+    newDiv.textContent = `Div ${i + 1}`;
+    fragment.appendChild(newDiv);
+}
+document.getElementById('container').appendChild(fragment);
+</code></pre>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+            <hr>
+            <h3 id="12-best-practices">12. Best Practices for DOM Manipulation</h3>
+            <ul>
+                <li>
+                    <p><strong>Minimize DOM Access:</strong> Accessing the DOM is expensive in terms of performance.
+                        Minimize the number of times you query or modify the DOM.</p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                        <pre><code class="language-javascript">// Avoid multiple DOM accesses
+// Bad practice
+document.getElementById('myElement').style.color = 'red';
+document.getElementById('myElement').style.backgroundColor = 'blue';
+
+// Good practice
+let myElement = document.getElementById('myElement');
+myElement.style.color = 'red';
+myElement.style.backgroundColor = 'blue';
+</code></pre>
+                    </div>
+                </li>
+                <li>
+                    <p><strong>Use Event Delegation:</strong> Attach event listeners to a parent element to handle
+                        events for multiple child elements.</p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                        <pre><code class="language-javascript">// Use event delegation
+document.getElementById('parentElement').addEventListener('click', (event) => {
+    if (event.target && event.target.matches('button')) {
+        console.log('Button clicked:', event.target.textContent);
+    }
+});
+</code></pre>
+                    </div>
+                </li>
+                <li>
+                    <p><strong>Batch DOM Updates:</strong> Group multiple DOM changes together to minimize reflows and
+                        repaints.</p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                        <pre><code class="language-javascript">// Batch DOM updates
+let container = document.getElementById('container');
+let fragment = document.createDocumentFragment();
+
+for (let i = 0; i &lt; 5; i++) {
+    let newDiv = document.createElement('div');
+    newDiv.textContent = `Div ${i + 1}`;
+    fragment.appendChild(newDiv);
+}
+
+container.appendChild(fragment);
+</code></pre>
+                    </div>
+                </li>
+                <li>
+                    <p><strong>Cache DOM Queries:</strong> Store DOM references in variables for repeated use instead of
+                        querying the DOM multiple times.</p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                        <pre><code class="language-javascript">// Cache DOM queries
+// Bad practice
+for (let i = 0; i &lt; 5; i++) {
+    document.getElementById('myElement').style.color = 'red';
+}
+
+// Good practice
+let myElement = document.getElementById('myElement');
+for (let i = 0; i &lt; 5; i++) {
+    myElement.style.color = 'red';
+}
+</code></pre>
+                    </div>
+                </li>
+                <li>
+                    <p><strong>Use `classList` for Class Manipulations:</strong> Prefer `classList` over string
+                        concatenation for adding, removing, and toggling classes.</p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                        <pre><code class="language-javascript">// Use classList
+let element = document.getElementById('myElement');
+
+// Add class
+element.classList.add('active');
+
+// Remove class
+element.classList.remove('inactive');
+
+// Toggle class
+element.classList.toggle('highlight');
+</code></pre>
+                    </div>
+                </li>
+                <li>
+                    <p><strong>Use `innerHTML` Carefully:</strong> Avoid using `innerHTML` when dealing with
+                        user-generated content to prevent cross-site scripting (XSS) attacks. Use safer methods like
+                        `textContent` or create elements dynamically.</p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                        <pre><code class="language-javascript">// Safe approach
+let userInput = '<script>alert("XSS Attack!")</script>';
+let safeElement = document.createElement('div');
+safeElement.textContent = userInput; // Safely escape HTML
+document.body.appendChild(safeElement);
+</code></pre>
+                    </div>
+                </li>
+                <li>
+                    <p><strong>Defer JavaScript Execution:</strong> Use `defer` or place scripts at the end of the HTML
+                        to ensure the DOM is fully loaded before execution.</p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                        <pre><code class="language-html">&lt;!-- Use defer in the script tag --&gt;
+&lt;script src="script.js" defer&gt;&lt;/script&gt;
+
+&lt;!-- Or place the script before the closing body tag --&gt;
+&lt;/body&gt;
+&lt;script src="script.js"&gt;&lt;/script&gt;
+</code></pre>
+                    </div>
+                </li>
+                <li>
+                    <p><strong>Optimize Animations:</strong> Use `requestAnimationFrame` for smoother animations and
+                        avoid using `setInterval` or `setTimeout` for animations.</p>
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+                        <pre><code class="language-javascript">// Optimized animation
+function animate(element) {
+    let position = 0;
+    function frame() {
+        position += 1;
+        element.style.left = position + 'px';
+        if (position &lt; 200) {
+            requestAnimationFrame(frame);
+        }
+    }
+    frame();
+}
+let box = document.getElementById('box');
+animate(box);
+</code></pre>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+
+
+
+
+
+
         </div>
     </div>
 
-<!-- Footer Section -->
+    <!-- Footer Section -->
     <div class="footer">
         <p>&copy; 2024 Ujjwal Garai. All rights reserved.</p>
     </div>
@@ -138,5 +844,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Local JS -->
     <script src="../script.js"></script>
-    </body>
-    </html>
+</body>
+
+</html>

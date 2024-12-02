@@ -112,29 +112,3 @@ function copyCode(event) {
     }, 2000);
 }
 
-
-
-// Practices
-
-// Create an object to store heading-wise practices
-const practicesByHeading = {};
-
-// Iterate through each heading and its associated list
-$('.step-by-step-guide h3').each(function() {
-    const heading = $(this).text().trim(); // Get the heading text
-    const practices = $(this).next('ul').find('li:contains("Practice:")'); // Find related practice <li> elements
-
-    // Add practices to the object
-    practicesByHeading[heading] = practices.map(function() {
-        return $(this).text().trim();
-    }).get(); // Convert jQuery object to an array
-});
-
-// Log the practices grouped by headings
-console.log(practicesByHeading);
-
-// Example: Display in a readable format
-for (const heading in practicesByHeading) {
-    console.log(`\n${heading}:`);
-    practicesByHeading[heading].forEach(practice => console.log(`- ${practice}`));
-}
