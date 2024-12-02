@@ -555,7 +555,7 @@ let position = 0;
 function move() {
     position += 5;
     box.style.left = position + 'px';
-    if (position &lt; 200) {
+    if (position < 200) {
         requestAnimationFrame(move);
     }
 }
@@ -669,7 +669,7 @@ element.style.cssText = 'width: 100px; height: 50px;';
                                 <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                                 <pre><code class="language-javascript">// Use DocumentFragment
 let fragment = document.createDocumentFragment();
-for (let i = 0; i &lt; 5; i++) {
+for (let i = 0; i < 5; i++) {
     let newDiv = document.createElement('div');
     newDiv.textContent = `Div ${i + 1}`;
     fragment.appendChild(newDiv);
@@ -724,7 +724,7 @@ document.getElementById('parentElement').addEventListener('click', (event) => {
 let container = document.getElementById('container');
 let fragment = document.createDocumentFragment();
 
-for (let i = 0; i &lt; 5; i++) {
+for (let i = 0; i < 5; i++) {
     let newDiv = document.createElement('div');
     newDiv.textContent = `Div ${i + 1}`;
     fragment.appendChild(newDiv);
@@ -741,13 +741,13 @@ container.appendChild(fragment);
                         <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                         <pre><code class="language-javascript">// Cache DOM queries
 // Bad practice
-for (let i = 0; i &lt; 5; i++) {
+for (let i = 0; i < 5; i++) {
     document.getElementById('myElement').style.color = 'red';
 }
 
 // Good practice
 let myElement = document.getElementById('myElement');
-for (let i = 0; i &lt; 5; i++) {
+for (let i = 0; i < 5; i++) {
     myElement.style.color = 'red';
 }
 </code></pre>
@@ -811,7 +811,7 @@ function animate(element) {
     function frame() {
         position += 1;
         element.style.left = position + 'px';
-        if (position &lt; 200) {
+        if (position < 200) {
             requestAnimationFrame(frame);
         }
     }
