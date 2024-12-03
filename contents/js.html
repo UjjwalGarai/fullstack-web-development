@@ -54,8 +54,7 @@
                 <li><a href="#17-functions">Functions</a> </li>
                 <li><a href="#18-classes">Classes</a> </li>
                 <li><a href="#19-dates">Dates</a> </li>
-                <li><a href="#20-getters-and-setters">Getters and Setters</a> </li>
-                <li><a href="#21-best-practices-in-javascript">Best Practices in JavaScript</a> </li>
+                <li><a href="#20-best-practices-in-javascript">Best Practices in JavaScript</a> </li>
 
             </ol>
         </div>
@@ -861,47 +860,9 @@ console.log(now.getUTCFullYear()); // e.g., 2024
                     </div>
                 </li>
             </ul>
-            <hr>
+            <hr>     
 
-            <h3 id="20-getters-and-setters">20. Getters and Setters</h3>
-            <ul>
-                <li>
-                    <p><strong>Definition:</strong> Methods for retrieving and updating object properties.</p>
-                </li>
-                <li>
-                    <p><strong>Purpose:</strong> Encapsulate property access and modification.</p>
-                </li>
-                <li>
-                    <p><strong>Use Case:</strong> Control or validate property changes.</p>
-                </li>
-                <li>
-                    <p><strong>Example:</strong></p>
-                    <div class="code-container">
-                        <button class="copy-btn" onclick="copyCode(event)">Copy</button>
-                        <pre><code class="language-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span> </span>{
-    constructor(name) {
-        <span class="hljs-built_in">this</span>._name = name;
-    }
-    <span class="hljs-keyword">get</span> name() {
-        <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>._name;
-    }
-    <span class="hljs-keyword">set</span> name(<span class="hljs-keyword">new</span><span class="hljs-type">Name</span>) {
-        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">new</span><span class="hljs-type">Name</span>.length &gt; <span class="hljs-number">0</span>) {
-            <span class="hljs-built_in">this</span>._name = <span class="hljs-keyword">new</span><span class="hljs-type">Name</span>;
-        }
-    }
-}
-let person = <span class="hljs-keyword">new</span> <span class="hljs-type">Person</span>(<span class="hljs-string">"Ujjwal"</span>);
-console.log(person.name); <span class="hljs-comment">// "Ujjwal"</span>
-person.name = <span class="hljs-string">"Amit"</span>;
-console.log(person.name); <span class="hljs-comment">// "Amit"</span>
-</code></pre>
-                    </div>
-                </li>
-            </ul>
-            <hr>
-
-            <h3 id="21-best-practices-in-javascript">21. Best Practices in JavaScript</h3>
+            <h3 id="20-best-practices-in-javascript">20. Best Practices in JavaScript</h3>
             <ul>
                 <li>
                     <p><strong>Definition:</strong> JavaScript best practices are coding guidelines that help write
