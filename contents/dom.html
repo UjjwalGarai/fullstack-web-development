@@ -7,9 +7,9 @@
     <title>HTML Tutorial</title>
     <link rel="stylesheet" href="../style.css">
     <!-- Prism.js Stylesheet for syntax highlighting -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" integrity="sha384-[hash]" crossorigin="anonymous">
     <!-- toogle icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-[hash]" crossorigin="anonymous">
 
 </head>
 
@@ -186,7 +186,8 @@ element.textContent = "Updated Text";
                                 <button class="copy-btn" onclick="copyCode(event)">Copy</button>
                                 <pre><code class="language-javascript">// Modify HTML content
 let element = document.getElementById('example');
-element.innerHTML = "<strong>Bold Text</strong>";
+document.createElement = "<strong>Bold Text</strong>"; 
+//element inner html avoiding because of XSS attacks
 </code></pre>
                             </div>
                         </li>
@@ -839,9 +840,9 @@ animate(box);
     </div>
 
     <!-- Prism.js Scripts for Syntax Highlighting -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha384-[hash]" crossorigin="anonymous"></script>
     <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha384-[hash]" crossorigin="anonymous"></script>
     <!-- Local JS -->
     <script src="../script.js"></script>
 </body>
