@@ -291,8 +291,8 @@ const openLayersData = {
                                         "description": "",
                                         "link": "https://openlayers.org/en/latest/apidoc/module-ol_source_Image-ImageSource.html",
                                         "subtopics": {
-                                            "Text": {
-                                                "description": "ImageArcGISRest",
+                                            "ImageArcGISRest": {
+                                                "description": "",
                                                 "link": "https://openlayers.org/en/latest/apidoc/module-ol_source_ImageArcGISRest-ImageArcGISRest.html",
                                             },
                                             "ImageCanvasSource": {
@@ -485,10 +485,10 @@ function createTree(data) {
         ul.appendChild(li);
 
         // Add toggle functionality
-        li.addEventListener('click', (event) => {
-            li.classList.toggle('open');
-            event.stopPropagation();
-        });
+        // li.addEventListener('click', (event) => {
+        //     li.classList.toggle('open');
+        //     event.stopPropagation();
+        // });
     }
     return ul;
 }
