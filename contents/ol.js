@@ -463,13 +463,186 @@ const openLayersData = {
                         "link": "https://openlayers.org/en/latest/apidoc/module-ol_VectorTile-VectorTile.html",
                     },
                 }
+            },
+            "Format": {
+                "description": "The Format module in OpenLayers provides tools for reading, writing, and parsing geospatial data in various formats.",
+                "link": "",
+                "subtopics": {
+                    "Feature": {
+                        "description": "Base class for all feature formats in OpenLayers.",
+                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_Feature-FeatureFormat.html",
+                        "subtopics": {
+                            "JSONFeature": {
+                                "description": "Base class for JSON-based feature formats.",
+                                "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_JSONFeature-JSONFeature.html",
+                                "subtopics": {
+                                    "EsriJSON": {
+                                        "description": "Handles the EsriJSON format for feature serialization and deserialization.",
+                                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_EsriJSON-EsriJSON.html",
+                                    },
+                                    "GeoJSON": {
+                                        "description": "Reads and writes data in the GeoJSON format.",
+                                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_GeoJSON-GeoJSON.html",
+                                    },
+                                    "TopoJSON": {
+                                        "description": "Reads and writes data in the TopoJSON format.",
+                                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_TopoJSON-TopoJSON.html",
+                                    },
+
+                                }
+                            },
+                            "MVT": {
+                                "description": "Handles Mapbox Vector Tile (MVT) data.",
+                                "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_MVT-MVT.html",
+                            },
+                            "TextFeature": {
+                                "description": "Base class for text-based feature formats.",
+                                "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_TextFeature-TextFeature.html",
+                                "subtopics": {
+                                    "IGC": {
+                                        "description": "Reads IGC files, commonly used for gliding logs.",
+                                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_IGC-IGC.html",
+                                    },
+                                    "Polyline": {
+                                        "description": "Encodes and decodes Google Maps encoded polylines.",
+                                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_Polyline-Polyline.html",
+                                    },
+                                    "WKT": {
+                                        "description": "Reads and writes Well-Known Text (WKT) geometries.",
+                                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_WKT-WKT.html",
+                                    },
+
+                                }
+                            },
+                            "WKB": {
+                                "description": "arses Well-Known Binary (WKB) geometry format.",
+                                "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_WKB-WKB.html",
+                            },
+                            "XMLFeature": {
+                                "description": "Base class for XML-based feature formats.",
+                                "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_XMLFeature-XMLFeature.html",
+                                "subtopics": {
+                                    "GMLBase": {
+                                        "description": "Base class for GML formats.",
+                                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_GMLBase-GMLBase.html",
+                                        "subtopics": {
+                                            "GML2": {
+                                                "description": "Supports GML version 2.",
+                                                "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_GML2-GML2.html",
+                                            },
+                                            "GML3": {
+                                                "description": "Supports GML version 3.",
+                                                "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_GML3-GML3.html",
+                                            },
+                                            "GML32": {
+                                                "description": "Supports GML version 32.",
+                                                "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_GML32-GML32.html",
+                                            },
+                                        }
+                                    },
+                                    "GPX": {
+                                        "description": "Reads and writes GPX (GPS Exchange Format) data.",
+                                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_GPX-GPX.html",
+                                    },
+                                    "KML": {
+                                        "description": "Reads and writes KML (Keyhole Markup Language) files.",
+                                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_KML-KML.html",
+                                    },
+                                    "OSMXML": {
+                                        "description": "Reads OSM (OpenStreetMap) XML data.",
+                                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_OSMXML-OSMXML.html",
+                                    },
+                                    "WFS": {
+                                        "description": "Handles Web Feature Service (WFS) requests and responses.",
+                                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_WFS-WFS.html",
+                                    },
+                                    "WMSGetFeatureInfo": {
+                                        "description": "Parses WMS GetFeatureInfo responses.",
+                                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_WMSGetFeatureInfo-WMSGetFeatureInfo.html",
+                                    },
+
+                                }
+                            },
+                        }
+
+                    },
+                    "Filter": {
+                        "description": "Provides filtering utilities for feature data.",
+                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_format_filter.html",
+                    }
+
+
+                }
+            },
+            "Style": {
+                "description": "The Style module in OpenLayers provides a set of tools to define the visual representation of vector features, such as points, lines, polygons, and text labels.",
+                "link": "",
+                "subtopics": {
+                    "ImageStyle": {
+                        "description": "Base class for styles that use images to represent point features.",
+                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_style_Image-ImageStyle.html",
+                        "subtopics": {
+                            "Icon": {
+                                "description": "Represents point features with an icon or image.",
+                                "link": "https://openlayers.org/en/latest/apidoc/module-ol_style_Icon-Icon.html",
+                            },
+                            "RegularShape": {
+                                "description": "Represents point features using regular geometric shapes like stars, triangles, and crosses.",
+                                "link": "https://openlayers.org/en/latest/apidoc/module-ol_style_RegularShape-RegularShape.html",
+                                "subtopics": {
+                                    "CircleStyle": {
+                                        "description": "A specialized style for rendering point features as circles.",
+                                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_style_Circle-CircleStyle.html",
+                                    },
+                                }
+                            },
+                        }
+                    },
+                    "Fill": {
+                        "description": "Defines the fill style for polygons, including solid colors and patterns.",
+                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_style_Fill-Fill.html",
+                    },
+                    "Flat": {
+                        "description": "Provides utilities for flat styling configurations, often used for rendering optimization.",
+                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_style_flat.html",
+                    },
+                    "IconImageCache": {
+                        "description": "Manages caching of icon images to improve performance when reusing icons.",
+                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_style_IconImageCache-IconImageCache.html",
+                    },
+                    "Stroke": {
+                        "description": "Defines the stroke style for lines and the outlines of polygons.",
+                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_style_Stroke-Stroke.html",
+                    },
+                    "Style": {
+                        "description": "Combines multiple styles (e.g., fill, stroke, and text) into a single style definition for vector features.",
+                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_style_Style-Style.html",
+                    },
+                    "Text": {
+                        "description": "Provides styling options for text labels on vector features, including font, color, alignment, and placement.",
+                        "link": "https://openlayers.org/en/latest/apidoc/module-ol_style_Text-Text.html",
+                    },
+
+                }
             }
         }
     }
 }
 
+/*
 
+"Ujjwal": {
+    "description": "",
+    "link": "",
+    "subtopics": {
+        "text": {
+            "description": "",
+            "link": "",
+        },
+    }
+}
 
+*/
 
 // Function to create a tree structure
 function createTree(data) {
